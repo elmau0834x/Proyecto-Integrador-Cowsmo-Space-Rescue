@@ -26,7 +26,7 @@
 
 ## 📊 Business Model Canvas Interactivo
 
-> 🌐 **Enlace en vivo:** [Ver Business Model Canvas en GitHub Pages](https://TU_USUARIO.github.io/TU_NOMBRE_DE_REPO/Business%20Model/Codex/bmd.html) *(Sustituye TU_USUARIO y TU_NOMBRE_DE_REPO con tus datos reales una vez activado GitHub Pages)*.
+> 🌐 **Enlace en vivo:** [Ver Business Model Canvas en GitHub Pages](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Codex/bmd.html).
 
 ### 💡 Nota sobre la Herramienta y el Diseño
 Para cumplir con los requerimientos metodológicos del proyecto, se utilizó inicialmente la herramienta basada en agentes **Archify** para la fase de análisis conceptual y estructuración inicial de bloques (disponible en la carpeta `Business Model/Archify/`). 
