@@ -5,14 +5,14 @@
 ---
 
 ## 📋 Descripción del Proyecto
-**Cowsmo: Space Rescue** es un videojuego de plataformas 2.5D donde los jugadores acompañan a la protagonista, **Moo-ry**, en una misión espacial en el planeta Nébularis para recolectar chatarra espacial, limpiar los escenarios mediante el sistema **Bio-Bloom** y construir el cohete *Cowsmo-1* para rescatar a su compañera[cite: 1, 4].
+**Cowsmo: Space Rescue** es un videojuego de plataformas 2.5D donde los jugadores acompañan a la protagonista, **Moo-ry**, en una misión espacial en el planeta Nébularis para recolectar chatarra espacial, limpiar los escenarios mediante el sistema **Bio-Bloom** y construir el cohete *Cowsmo-1* para rescatar a su compañera.
 
 ---
 
 ## 👥 Equipo de Desarrollo (Organigrama)
-* **Mauricio Rosales G.** – Líder de Proyecto y Programador Principal[cite: 1]
-* **Brisa Nallasly García G.** – Desarrolladora / Colaboradora[cite: 1]
-* **Carlos Daniel García Pluma** – Desarrollador / Colaborador
+* **Mauricio Rosales G.** – Líder de Proyecto y Programador Principal
+* **Brisa Nallely Garcia Gregorio** – Encargado de Control de Calidad (QA), Pruebas en Android/PC y Documentación/Jira
+* **Carlos Daniel Garcia Pluma** – Diseñador de Niveles 2.5D y Arte/Assets
 
 ---
 
@@ -66,6 +66,6 @@ Sin embargo, debido a las limitaciones gráficas y de densidad de texto de Archi
 📦 Cowsmo-Space-Rescue
  ┣ 📂 Business Model/
  ┃  ┣ 📂 Archify/         # Bocetos y archivos iniciales generados con Archify
- ┃  ┗ 📂 Codex/           # Interfaz HTML interactiva principal del Business Model Canvas[cite: 10]
+ ┃  ┗ 📂 Codex/           # Interfaz HTML interactiva principal del Business Model Canvas
  ┣ 📂 Documents/          # Documentación oficial del proyecto (GDD en PDF)
  ┗ 📜 README.md           # Documentación principal del repositorio
