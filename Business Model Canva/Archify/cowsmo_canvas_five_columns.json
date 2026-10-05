@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Cowsmo: Space Rescue",
+    "quality_profile": "standard"
+  },
+  "layout": {
+    "mode": "grid",
+    "cols": 5,
+    "gapX": 40,
+    "gapY": 36,
+    "cellW": 500,
+    "cellH": 280
+  },
+  "components": [
+    {
+      "id": "key-partners",
+      "type": "backend",
+      "label": "Key Partners",
+      "sublabel": "Participantes de pruebas (estudiantes y jugadores objetivo)\nComunidades de desarrollo de videojuegos (feedback)",
+      "pos": [40, 80],
+      "size": [500, 600]
+    },
+    {
+      "id": "key-activities",
+      "type": "backend",
+      "label": "Key Activities",
+      "sublabel": "Gestión del GDD y tareas de desarrollo de software\nProgramación de lógicas (doble salto, topetazo, imán)\nIntegración de Bio-Bloom, Eco-Crafting, interfaz y audio",
+      "pos": [580, 80],
+      "size": [600, 280]
+    },
+    {
+      "id": "key-resources",
+      "type": "backend",
+      "label": "Key Resources",
+      "sublabel": "Métricas de jugadores nuevos y casuales\nIntegración técnica de temas ecológicos",
+      "pos": [580, 396],
+      "size": [600, 284]
+    },
+    {
+      "id": "value-proposition",
+      "type": "cloud",
+      "label": "Value Proposition",
+      "sublabel": "Aventura 2.5D que integra diversión, limpieza y reciclaje\nObjetivo: Construir el cohete Cowsmo-1\nSistema Bio-Bloom (Transformación visual de escenarios)\nControles adaptados a PC y Android\nFomento de los ODS 12, 13 y 15",
+      "pos": [1220, 80],
+      "size": [800, 600]
+    },
+    {
+      "id": "customer-relationships",
+      "type": "frontend",
+      "label": "Customer Relationships",
+      "sublabel": "Aprendizaje guiado y tutorial en primer nivel\nControles sencillos con respuesta inmediata\nCoherencia temática ambiental",
+      "pos": [2060, 80],
+      "size": [500, 280]
+    },
+    {
+      "id": "channels",
+      "type": "frontend",
+      "label": "Channels",
+      "sublabel": "Presentaciones y demostraciones académicas\nGoogle Play para versión móvil\nItch.io para versión de PC",
+      "pos": [2060, 396],
+      "size": [500, 284]
+    },
+    {
+      "id": "customer-segments",
+      "type": "frontend",
+      "label": "Customer Segments",
+      "sublabel": "Jugadores de 8 a 25 años en PC o Android\nPerfil: Jugadores casuales, arcade y de plataformas\nInteresados en reciclaje y cuidado ambiental\nBeneficiarios académicos (evaluadores del MVP)",
+      "pos": [2600, 80],
+      "size": [680, 600]
+    },
+    {
+      "id": "cost-structure",
+      "type": "database",
+      "label": "Cost Structure",
+      "sublabel": "Tiempo invertido en programación, diseño y arte\nHardware, dispositivos, electricidad e internet\nLicencias y cuentas de distribución",
+      "pos": [40, 716],
+      "size": [1600, 280]
+    },
+    {
+      "id": "revenue-streams",
+      "type": "database",
+      "label": "Revenue Streams",
+      "sublabel": "MVP académico gratuito inicial\nMóvil: \"Prueba y Compra\" (Prólogo gratis, $1.99 - $2.99 USD)\nPC: Premium ($3.99 - $4.99 USD)",
+      "pos": [1680, 716],
+      "size": [1600, 280]
+    }
+  ]
+}

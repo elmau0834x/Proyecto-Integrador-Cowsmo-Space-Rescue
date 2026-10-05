@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowsmo: Space Rescue - Business Model Canvas</title>
+    <style>
+        :root {
+            --bg-space: #0f172a;
+            --card-bg: #1e293b;
+            --card-hover: #26334d;
+            --border-color: #334155;
+            --neon-blue: #38bdf8;
+            --eco-green: #4ade80;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-space);
+            background-image: radial-gradient(circle at top, #1e293b 0%, transparent 80%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 30px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        .header h2 {
+            color: var(--eco-green);
+            font-size: 1.2rem;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .instruction {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        /* Estructura asimétrica del Canvas */
+        .canvas-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: minmax(220px, auto) minmax(220px, auto) minmax(180px, auto);
+            gap: 12px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            background: var(--card-hover);
+            border-color: var(--neon-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2);
+        }
+
+        .card::after {
+            content: "🔍 Clic para ampliar";
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            font-size: 0.75rem;
+            color: var(--neon-blue);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover::after {
+            opacity: 1;
+        }
+
+        .card h3 {
+            color: var(--neon-blue);
+            font-size: 1.1rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--eco-green);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Asignación de posiciones en la cuadrícula */
+        .partners { grid-column: 1 / 3; grid-row: 1 / 3; }
+        .activities { grid-column: 3 / 5; grid-row: 1 / 2; }
+        .resources { grid-column: 3 / 5; grid-row: 2 / 3; }
+        .value { grid-column: 5 / 7; grid-row: 1 / 3; }
+        .relationships { grid-column: 7 / 9; grid-row: 1 / 2; }
+        .channels { grid-column: 7 / 9; grid-row: 2 / 3; }
+        .segments { grid-column: 9 / 11; grid-row: 1 / 3; }
+        .costs { grid-column: 1 / 6; grid-row: 3 / 4; }
+        .revenue { grid-column: 6 / 11; grid-row: 3 / 4; }
+
+        /* Estilos del Modal (Ventana emergente) */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .modal-content {
+            background: var(--card-bg);
+            border: 2px solid var(--neon-blue);
+            border-radius: 12px;
+            max-width: 650px;
+            width: 100%;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            position: relative;
+            animation: modalPop 0.3s ease;
+        }
+
+        @keyframes modalPop {
+            0% { transform: scale(0.9); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-content h2 {
+            color: var(--neon-blue);
+            margin-top: 0;
+            border-bottom: 2px solid var(--eco-green);
+            padding-bottom: 10px;
+        }
+
+        .modal-content ul {
+            margin: 20px 0;
+            padding-left: 20px;
+            color: var(--text-main);
+        }
+
+        .modal-content li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .modal-content li strong {
+            color: var(--eco-green);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #ff5555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Business Model Canvas</h1>
+        <h2>Cowsmo: Space Rescue</h2>
+    </div>
+
+    <div class="instruction">Haz clic en cualquier cuadrante para ver el desglose detallado del proyecto.</div>
+
+    <div class="canvas-grid">
+        <!-- Infraestructura -->
+        <div class="card partners" onclick="openModal('Socios Clave', [
+            '<strong>Participantes de pruebas:</strong> Estudiantes y jugadores del público objetivo para evaluar rendimiento y curva de dificultad.',
+            '<strong>Comunidades de desarrollo:</strong> Foros y grupos especializados para recibir apoyo técnico y retroalimentación externa.'
+        ])">
+            <h3>Socios Clave</h3>
+            <p>Estudiantes testers y comunidades de desarrollo de videojuegos orientadas a retroalimentación.</p>
+        </div>
+
+        <div class="card activities" onclick="openModal('Actividades Clave', [
+            '<strong>Gestión:</strong> Revisión constante del GDD y organización de tareas en Jira.',
+            '<strong>Programación:</strong> Lógicas de movimiento (doble salto, topetazo, imán).',
+            '<strong>Integración:</strong> Implementación de los sistemas Bio-Bloom y Eco-Crafting.'
+        ])">
+            <h3>Actividades Clave</h3>
+            <p>Gestión en Jira, programación de mecánicas de movimiento e integración de sistemas clave.</p>
+        </div>
+
+        <div class="card resources" onclick="openModal('Recursos Clave', [
+            '<strong>Métricas de feedback:</strong> Datos cuantitativos y cualitativos obtenidos de jugadores nuevos y casuales.',
+            '<strong>Coherencia narrativa:</strong> Mantenimiento estricto del mensaje ambiental en todo el diseño de niveles.'
+        ])">
+            <h3>Recursos Clave</h3>
+            <p>Métricas de feedback de jugadores y coherencia del mensaje ambiental en niveles.</p>
+        </div>
+
+        <!-- Propuesta de Valor -->
+        <div class="card value" onclick='openModal("Propuesta de Valor", [
+            "<strong>Aventura 2.5D:</strong> Videojuego que integra diversión, limpieza y reciclaje en una misma experiencia.",
+            "<strong>Misión central:</strong> Ayudar a Moo-ry a construir el cohete Cowsmo-1 para rescatar a su compañera.",
+            "<strong>Sistema Bio-Bloom:</strong> Transformación visual dinámica de los escenarios que recompensa la recolección de chatarra.",
+            "<strong>Accesibilidad:</strong> Controles adaptados e intuitivos tanto para PC como para dispositivos Android.",
+            "<strong>Impacto Social:</strong> Comunicación interactiva alineada con los ODS 12, 13 y 15."
+        ])'>
+            <h3>Propuesta de Valor</h3>
+            <p>Videojuego 2.5D que une diversión, limpieza y reciclaje fomentando los ODS de desarrollo sostenible.</p>
+        </div>
+
+        <!-- Mercado -->
+        <div class="card relationships" onclick='openModal("Relaciones con el Cliente", [
+            "<strong>Onboarding:</strong> Aprendizaje guiado mediante instrucciones breves en el nivel tutorial.",
+            "<strong>Usabilidad:</strong> Controles sencillos con objetivos claros y respuesta inmediata al jugador.",
+            "<strong>Temática:</strong> Conexión constante entre las acciones del jugador y la ecología del entorno."
+        ])'>
+            <h3>Relaciones con el Cliente</h3>
+            <p>Onboarding guiado, controles sencillos con respuesta inmediata y temática ecológica constante.</p>
+        </div>
+
+        <div class="card channels" onclick='openModal("Canales", [
+            "<strong>Demostraciones:</strong> Presentaciones académicas directas ante docentes y evaluadores.",
+            "<strong>Google Play:</strong> Plataforma de distribución oficial para la versión móvil.",
+            "<strong>Itch.io:</strong> Plataforma de distribución oficial para la versión de PC."
+        ])'>
+            <h3>Canales</h3>
+            <p>Demostraciones académicas directas y distribución digital a través de Google Play e Itch.io.</p>
+        </div>
+
+        <div class="card segments" onclick='openModal("Segmentos de Clientes", [
+            "<strong>Rango de Edad:</strong> Jugadores de 8 a 25 años.",
+            "<strong>Perfil:</strong> Gamers casuales de dispositivos móviles y amantes de los plataformas en PC.",
+            "<strong>Intereses:</strong> Usuarios motivados por temáticas de cuidado ambiental y mecánicas de reciclaje.",
+            "<strong>Académico:</strong> Equipo desarrollador y docentes evaluadores del MVP."
+        ])'>
+            <h3>Segmentos de Clientes</h3>
+            <p>Jugadores de 8 a 25 años, gamers casuales/arcade y evaluadores académicos del MVP.</p>
+        </div>
+
+        <!-- Finanzas -->
+        <div class="card costs" onclick='openModal("Estructura de Costes", [
+            "<strong>Desarrollo:</strong> Tiempo invertido en programación, diseño de niveles, arte, audio y documentación.",
+            "<strong>Operación:</strong> Uso de hardware, dispositivos de prueba (Android), consumo de electricidad e internet.",
+            "<strong>Recursos:</strong> Creación o adquisición de assets gráficos/sonoros, licencias y cuentas de distribución."
+        ])'>
+            <h3>Estructura de Costes</h3>
+            <p>Tiempos de desarrollo, consumo operativo de hardware/internet y adquisición de assets o licencias.</p>
+        </div>
+
+        <div class="card revenue" onclick='openModal("Fuentes de Ingresos", [
+            "<strong>Fase MVP:</strong> Lanzamiento inicial académico de forma totalmente gratuita.",
+            "<strong>Móvil:</strong> Modelo &quot;Prueba y Compra&quot; (Prólogo gratis, pago único de $1.99 - $2.99 USD por el juego completo).",
+            "<strong>PC:</strong> Modelo Premium tradicional de compra directa ($3.99 - $4.99 USD).",
+            "<strong>Escalabilidad:</strong> Opción futura de implementación de anuncios recompensados en la versión móvil."
+        ])'>
+            <h3>Fuentes de Ingresos</h3>
+            <p>Fase MVP gratuita, modelo &quot;Prueba y Compra&quot; en móvil y versión Premium tradicional en PC.</p>
+        </div>
+    </div>
+
+    <!-- Ventana Modal Interactiva -->
+    <div id="canvasModal" class="modal-overlay" onclick="closeModalOutside(event)">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle">Título</h2>
+            <ul id="modalList">
+                <!-- Contenido dinámico -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        console.log("Diagrama hecho por Cowsmo Team - 2024. Todos los derechos reservados. Mauricio Rosales, Brisa Nallely Garcia Gregorio y Carlos Daniel Garcia Pluma.");
+        function openModal(title, items) {
+            document.getElementById('modalTitle').innerText = title;
+            const listContainer = document.getElementById('modalList');
+            listContainer.innerHTML = '';
+            
+            items.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                listContainer.appendChild(li);
+            });
+
+            document.getElementById('canvasModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('canvasModal').style.display = 'none';
+        }
+
+        function closeModalOutside(event) {
+            const modal = document.getElementById('canvasModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>

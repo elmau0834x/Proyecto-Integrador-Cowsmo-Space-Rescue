@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "visual-check",
+  "evidenceKind": "automated-browser",
+  "status": "skipped",
+  "visualReview": "pending",
+  "artifact": {
+    "path": "C:\\Users\\elmau\\OneDrive\\Documentos\\Trabajos UTXJ\\Marco\\Integradora\\Practica 4\\Proyecto-Integrador-Cowsmo-Space-Rescue\\cowsmo_business_model_canvas.html",
+    "sha256": "d58284cd7c3a8c3fa468d4488c891fbde906874291d7111d1f4381db513049ae",
+    "bytes": 810892
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "unavailable",
+    "executable": null
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "C:\\Users\\elmau\\OneDrive\\Documentos\\Trabajos UTXJ\\Marco\\Integradora\\Practica 4\\Proyecto-Integrador-Cowsmo-Space-Rescue\\cowsmo_business_model_canvas.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun visual-check"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "readability": {
+    "status": "skipped",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "captures": {
+    "status": "skipped",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "receipt": "cowsmo_business_model_canvas.visual-check.json",
+    "contactSheet": "cowsmo_business_model_canvas.visual-check.html"
+  },
+  "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+}

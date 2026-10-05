@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Cowsmo: Space Rescue",
+    "quality_profile": "standard"
+  },
+  "layout": {
+    "mode": "grid",
+    "cols": 4,
+    "gapX": 42,
+    "gapY": 46,
+    "cellW": 360,
+    "cellH": 260
+  },
+  "components": [
+    {
+      "id": "key-partners",
+      "type": "backend",
+      "label": "Key Partners",
+      "sublabel": "Participantes de pruebas (estudiantes y\njugadores objetivo)\nComunidades de desarrollo de videojuegos\n(feedback)",
+      "pos": [40, 80],
+      "size": [1000, 260]
+    },
+    {
+      "id": "key-activities",
+      "type": "backend",
+      "label": "Key Activities",
+      "sublabel": "Gestión del GDD y tareas de desarrollo\nde software\nProgramación de lógicas (doble salto,\ntopetazo, imán)\nIntegración de Bio-Bloom, Eco-Crafting,\ninterfaz y audio",
+      "pos": [40, 386],
+      "size": [1000, 260]
+    },
+    {
+      "id": "key-resources",
+      "type": "backend",
+      "label": "Key Resources",
+      "sublabel": "Métricas de jugadores nuevos y casuales\npara afinar mecánicas\nIntegración técnica de temas ecológicos\ny coherencia ambiental",
+      "pos": [40, 692],
+      "size": [1000, 260]
+    },
+    {
+      "id": "value-proposition",
+      "type": "cloud",
+      "label": "Value Proposition",
+      "sublabel": "Integración de diversión, limpieza y\nreciclaje en plataformas 2.5D\nObjetivo: Ayudar a Moo-ry a construir el\ncohete Cowsmo-1\nSistema Bio-Bloom: Transformación visual\nde escenarios al limpiarlos\nControles adaptados a PC y Android\nComunicación de los ODS 12, 13 y 15",
+      "pos": [1080, 80],
+      "size": [1200, 812]
+    },
+    {
+      "id": "customer-relationships",
+      "type": "frontend",
+      "label": "Customer Relationships",
+      "sublabel": "Aprendizaje guiado y tutorial en el primer\nnivel\nControles sencillos con respuesta inmediata\nCoherencia temática ambiental a lo largo\nde todo el juego",
+      "pos": [2320, 80],
+      "size": [1000, 260]
+    },
+    {
+      "id": "channels",
+      "type": "frontend",
+      "label": "Channels",
+      "sublabel": "Presentaciones y demostraciones\nacadémicas\nGoogle Play para versión móvil\nItch.io para versión de PC",
+      "pos": [2320, 386],
+      "size": [1000, 260]
+    },
+    {
+      "id": "customer-segments",
+      "type": "frontend",
+      "label": "Customer Segments",
+      "sublabel": "Jugadores de 8 a 25 años en PC o Android\nPerfil: Jugadores casuales, arcade y de\nplataformas\nJugadores con interés en reciclaje y\ncuidado ambiental\nBeneficiarios académicos (evaluadores\ndel MVP)",
+      "pos": [2320, 692],
+      "size": [1000, 260]
+    },
+    {
+      "id": "cost-structure",
+      "type": "database",
+      "label": "Cost Structure",
+      "sublabel": "Tiempo invertido en programación, diseño,\narte y pruebas\nHardware, dispositivos de prueba,\nelectricidad e internet\nCreación o compra de assets, licencias y\ncuentas de distribución",
+      "pos": [40, 998],
+      "size": [1600, 260]
+    },
+    {
+      "id": "revenue-streams",
+      "type": "database",
+      "label": "Revenue Streams",
+      "sublabel": "MVP académico gratuito inicial\nMóvil: Modelo \"Prueba y Compra\" (Prólogo\ngratis, pago de $1.99 - $2.99 USD)\nPC: Modelo Premium ($3.99 - $4.99 USD)\nPosibles anuncios recompensados en el futuro",
+      "pos": [1648, 998],
+      "size": [1600, 260]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "Infrastructure",
+      "wraps": ["key-partners", "key-activities", "key-resources"],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Offer",
+      "wraps": ["value-proposition"],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Market",
+      "wraps": ["customer-relationships", "channels", "customer-segments"],
+      "pad": 24
+    },
+    {
+      "kind": "region",
+      "label": "Finances",
+      "wraps": ["cost-structure", "revenue-streams"],
+      "pad": 24
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "ok": false,
+  "command": "visual-check",
+  "evidenceKind": "automated-browser",
+  "status": "skipped",
+  "visualReview": "pending",
+  "artifact": {
+    "path": "C:\\Users\\elmau\\OneDrive\\Documentos\\Trabajos UTXJ\\Marco\\Integradora\\Practica 4\\Proyecto-Integrador-Cowsmo-Space-Rescue\\cowsmo_business_model_canvas_passports.html",
+    "sha256": "07cf8fe29dc8687ccf591b00f573f6e8c604793147d65ee1726712d2280401f1",
+    "bytes": 807615
+  },
+  "state": {
+    "detail": "read",
+    "motion": "still"
+  },
+  "chrome": {
+    "status": "unavailable",
+    "executable": null
+  },
+  "diagnostics": [
+    {
+      "code": "viewer/chrome-unavailable",
+      "severity": "warning",
+      "message": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path.",
+      "subject": {
+        "artifact": "C:\\Users\\elmau\\OneDrive\\Documentos\\Trabajos UTXJ\\Marco\\Integradora\\Practica 4\\Proyecto-Integrador-Cowsmo-Space-Rescue\\cowsmo_business_model_canvas_passports.html"
+      },
+      "evidence": {
+        "executable": null
+      },
+      "supportedFixes": [
+        "set ARCHIFY_CHROME to a Chrome or Chromium executable and rerun visual-check"
+      ]
+    }
+  ],
+  "containment": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "readability": {
+    "status": "skipped",
+    "minimumProjectedNodeTextPx": 6,
+    "viewports": []
+  },
+  "viewerChrome": {
+    "status": "skipped",
+    "viewports": []
+  },
+  "captures": {
+    "status": "skipped",
+    "screenshots": [],
+    "contactSheet": null
+  },
+  "sidecars": {
+    "receipt": "cowsmo_business_model_canvas_passports.visual-check.json",
+    "contactSheet": "cowsmo_business_model_canvas_passports.visual-check.html"
+  },
+  "error": "Chrome or Chromium is unavailable. Set ARCHIFY_CHROME to its executable path."
+}

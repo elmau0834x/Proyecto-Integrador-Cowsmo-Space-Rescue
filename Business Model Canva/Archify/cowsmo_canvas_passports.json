@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Cowsmo: Space Rescue",
+    "quality_profile": "standard"
+  },
+  "layout": {
+    "mode": "grid",
+    "cols": 5,
+    "gapX": 40,
+    "gapY": 36,
+    "cellW": 500,
+    "cellH": 280
+  },
+  "components": [
+    {
+      "id": "key-partners",
+      "type": "backend",
+      "label": "Key Partners",
+      "sublabel": "• Testers: Estudiantes y jugadores objetivo para evaluar rendimiento.\n• Comunidades: Foros de desarrollo para retroalimentación.",
+      "pos": [40, 80],
+      "size": [600, 600]
+    },
+    {
+      "id": "key-activities",
+      "type": "backend",
+      "label": "Key Activities",
+      "sublabel": "• Gestión: Revisión del GDD y organización en Jira.\n• Programación: Lógicas de movimiento (doble salto, topetazo, imán).\n• Integración: Sistemas Bio-Bloom y Eco-Crafting.",
+      "pos": [680, 80],
+      "size": [760, 280]
+    },
+    {
+      "id": "key-resources",
+      "type": "backend",
+      "label": "Key Resources",
+      "sublabel": "• Métricas: Feedback de jugadores casuales.\n• Coherencia: Mantenimiento del mensaje ambiental.",
+      "pos": [680, 396],
+      "size": [760, 284]
+    },
+    {
+      "id": "value-proposition",
+      "type": "cloud",
+      "label": "Value Proposition",
+      "sublabel": "• Aventura 2.5D: Diversión, limpieza y reciclaje.\n• Misión: Construir el cohete Cowsmo-1.\n• Bio-Bloom: Transformación visual dinámica.\n• Accesibilidad: Controles para PC y Android.\n• Impacto: ODS 12, 13 y 15.",
+      "pos": [1480, 80],
+      "size": [900, 600]
+    },
+    {
+      "id": "customer-relationships",
+      "type": "frontend",
+      "label": "Customer Relationships",
+      "sublabel": "• Onboarding: Aprendizaje guiado en el tutorial.\n• Usabilidad: Controles sencillos.\n• Temática: Conexión jugador-ecología.",
+      "pos": [2420, 80],
+      "size": [700, 280]
+    },
+    {
+      "id": "channels",
+      "type": "frontend",
+      "label": "Channels",
+      "sublabel": "• Demostraciones: Presentaciones académicas.\n• Google Play: Versión móvil.\n• Itch.io: Versión PC.",
+      "pos": [2420, 396],
+      "size": [700, 284]
+    },
+    {
+      "id": "customer-segments",
+      "type": "frontend",
+      "label": "Customer Segments",
+      "sublabel": "• Edad: 8 a 25 años.\n• Perfil: Gamers casuales (móvil) y arcade (PC).\n• Intereses: Cuidado ambiental.\n• Académico: Docentes evaluadores del MVP.",
+      "pos": [3160, 80],
+      "size": [760, 600]
+    },
+    {
+      "id": "cost-structure",
+      "type": "database",
+      "label": "Cost Structure",
+      "sublabel": "• Desarrollo: Tiempo en programación, arte, audio.\n• Operación: Hardware, dispositivos de prueba, internet.\n• Recursos: Assets, licencias, distribución.",
+      "pos": [40, 716],
+      "size": [1940, 280]
+    },
+    {
+      "id": "revenue-streams",
+      "type": "database",
+      "label": "Revenue Streams",
+      "sublabel": "• Fase MVP: Gratuito (sin ingresos).\n• Móvil: Prueba y Compra ($1.99-$2.99 USD).\n• PC: Premium ($3.99-$4.99 USD).",
+      "pos": [2020, 716],
+      "size": [1900, 280]
+    }
+  ]
+}
