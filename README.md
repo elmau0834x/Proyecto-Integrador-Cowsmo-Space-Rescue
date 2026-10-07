@@ -80,7 +80,14 @@
 
 ---
 
-# Cowsmo: Space Rescue - Diagrama de Roles
+# Cowsmo: Space Rescue
+## Diagrama de Arquitectura
+
+<p align="center">
+  <img src="./src/img/Diagrama de Arquitectura.jpeg" alt="Cowsmo Diagrama de Arquitectura" />
+</p>
+
+## Diagrama de Roles
 
 <p align="center">
   <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Fiagrama de Roles" />
