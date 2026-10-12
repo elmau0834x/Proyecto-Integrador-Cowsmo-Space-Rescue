@@ -48,7 +48,7 @@ El videojuego busca combinar el entretenimiento con la concientización ambienta
 
 Puedes consultar el modelo de negocio interactivo en el siguiente enlace:
 
-**[🌐 Abrir Business Model Canvas de Cowsmo: Space Rescue](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_04/BusinessModelCanva/Archify/Profesional/cowsmo-business-model-canvas.html)**
+**[🌐 Abrir Business Model Canvas de Cowsmo: Space Rescue](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_04/BusinessModelCanva/Archify/Profesional/cowsmo-business-model-canvas.html)**
 
 ### 📁 Archivos complementarios
 
