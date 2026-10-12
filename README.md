@@ -45,25 +45,12 @@ En esta sección se organizan las prácticas relacionadas con el proyecto y sus 
 | Práctica | Descripción | Documentación |
 |---|---|---|
 | **Práctica 04** | Documentación y desarrollo de la actividad correspondiente al proyecto. | [📄 Ver README](./Practica04/README.md) |
-| **Práctica 05** | Documentación de la actividad correspondiente al proyecto. | [📄 Ver README](./Practica05/README.md) |
-| **Práctica 06** | Diagrama de secuencia de pantallas (*sketches*) para Cowsmo: Space Rescue, con roles de usuario y navegación entre interfaces. | [📄 Ver README](./Practica06/README.md) |
+| **Práctica 05** | Documentación de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica%2005/imagenes) |
+| **Práctica 06** | Diagrama de secuencia de pantallas (*sketches*) para Cowsmo: Space Rescue, con roles de usuario y navegación entre interfaces. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica%2006/README.md) |
 
 > **Nota:** verifica que los nombres de las carpetas coincidan con las rutas de los enlaces. Si las prácticas se encuentran en otro repositorio, utiliza sus enlaces de GitHub correspondientes.
 
 ---
-
-## 📊 Business Model Canvas interactivo
-
-**Versión profesional:** [🌐 Abrir Business Model Canvas](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/Profesional/cowsmo-business-model-canvas.html)
-
-Esta versión presenta el modelo de negocio mediante un Canvas interactivo de nueve bloques, con una distribución en cinco columnas, detalles accesibles mediante interacción y opciones de visualización e impresión.
-
-### 📁 Archivos relacionados
-
-- [Contenido completo del Canvas](Business%20Model%20Canva/Archify/Profesional/contenido-canvas.md)
-- [README e instrucciones de la versión profesional](Business%20Model%20Canva/Archify/Profesional/README.md)
-- [Versión HTML generada con Archify](Business%20Model%20Canva/Archify/Profesional/cowsmo-archify.html)
-- [Evidencias de revisión visual](Business%20Model%20Canva/Archify/Profesional/evidencias/revision-visual.md)
 
 ### 🕘 Versiones anteriores
 
