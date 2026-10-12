@@ -35,13 +35,13 @@ Las funcionalidades principales propuestas para el videojuego son:
 
 En esta imagen se presenta el diagrama de roles de usuario identificados para el videojuego, junto con sus responsabilidades y participación dentro de la plataforma.
 
-![Diagrama 1 - Roles de usuario](./D1.png)
+![Diagrama 1 - Roles de usuario](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_05/imagenes/D1.jpeg)
 
 ### 📌 Diagrama 2. Funcionalidades del videojuego
 
 En esta imagen se muestran las principales funcionalidades (*features*) propuestas para el videojuego y las acciones que los usuarios podrán realizar dentro de la plataforma.
 
-![Diagrama 2 - Funcionalidades](./D2.png)
+![Diagrama 2 - Funcionalidades]([./](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_05/imagenes/D2.png)
 
 ## 👨‍💻 Integrantes del equipo
 
