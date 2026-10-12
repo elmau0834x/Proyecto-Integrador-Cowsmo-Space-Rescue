@@ -41,7 +41,7 @@ En esta imagen se presenta el diagrama de roles de usuario identificados para el
 
 En esta imagen se muestran las principales funcionalidades (*features*) propuestas para el videojuego y las acciones que los usuarios podrán realizar dentro de la plataforma.
 
-![Diagrama 2 - Funcionalidades]([./](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_05/imagenes/D2.png)
+![Diagrama 2 - Funcionalidades](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_05/imagenes/D2.png)
 
 ## 👨‍💻 Integrantes del equipo
 
