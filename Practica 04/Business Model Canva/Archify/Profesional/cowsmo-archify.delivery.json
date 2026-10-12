@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "b7283956-5ab7-4652-81a2-4d917419cb9d",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "C:\\Users\\grego\\Desktop\\cows\\Proyecto-Integrador-Cowsmo-Space-Rescue\\Business Model Canva\\Archify\\Profesional\\candidate.json",
+  "output": "C:\\Users\\grego\\Desktop\\cows\\Proyecto-Integrador-Cowsmo-Space-Rescue\\Business Model Canva\\Archify\\Profesional\\cowsmo-archify.html",
+  "specification": {
+    "sha256": "29b2cd93d6a3b3bc930c2d2f990e53daaf4c414e48e5fd320fc82b5246a43479",
+    "bytes": 4893
+  },
+  "artifact": {
+    "sha256": "448b4d7df3b7ad81e1534db685fa057f6c9c1c73c3a6812c05113f34859ea520",
+    "bytes": 749151
+  }
+}

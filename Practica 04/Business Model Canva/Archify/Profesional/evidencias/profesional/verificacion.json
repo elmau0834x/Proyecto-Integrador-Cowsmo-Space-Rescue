@@ -1,0 +1,251 @@
+{
+  "status": "passed",
+  "kind": "comprobación personalizada de la vista profesional; no sustituye el recibo Archify",
+  "date": "2026-10-09T20:42:46.260Z",
+  "artifact": {
+    "path": "C:\\Users\\grego\\Desktop\\cows\\Proyecto-Integrador-Cowsmo-Space-Rescue\\Business Model Canva\\Archify\\Profesional\\cowsmo-business-model-canvas.html",
+    "sha256": "c88bd701c35426aa8137d9b09f5384d6d6dd128dc045a2253a1eb5f3dee2fb70"
+  },
+  "checks": [
+    {
+      "name": "Nueve bloques",
+      "ok": true
+    },
+    {
+      "name": "Un SVG decorativo uniforme por título",
+      "ok": true
+    },
+    {
+      "name": "Logo cargado y proporcional",
+      "ok": true
+    },
+    {
+      "name": "Rutas locales existentes",
+      "ok": true,
+      "detail": [
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/Profesional/cowsmo-business-model-canvas.html#canvas",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/image/Logo.jpeg",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/README.md",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Documents/GDD%20-%20Cowsmo%20Space%20Rescue.pdf",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/cowsmo_business_model_canvas_passports.html",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Codex/bmd.html",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/Profesional/cowsmo-archify.html",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/Profesional/contenido-canvas.md",
+        "file:///C:/Users/grego/Desktop/cows/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/Profesional/README.md"
+      ]
+    },
+    {
+      "name": "Contención y tarjetas 1440×900",
+      "ok": true,
+      "detail": {
+        "width": 1440,
+        "scrollWidth": 1425,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 1440×900",
+      "ok": true
+    },
+    {
+      "name": "Contención y tarjetas 1600×1000",
+      "ok": true,
+      "detail": {
+        "width": 1600,
+        "scrollWidth": 1585,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 1600×1000",
+      "ok": true
+    },
+    {
+      "name": "Contención y tarjetas 1920×1080",
+      "ok": true,
+      "detail": {
+        "width": 1920,
+        "scrollWidth": 1905,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 1920×1080",
+      "ok": true
+    },
+    {
+      "name": "Contención y tarjetas 2048×1320",
+      "ok": true,
+      "detail": {
+        "width": 2048,
+        "scrollWidth": 2033,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 2048×1320",
+      "ok": true
+    },
+    {
+      "name": "Contención y tarjetas 390×844",
+      "ok": true,
+      "detail": {
+        "width": 390,
+        "scrollWidth": 390,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 390×844",
+      "ok": true
+    },
+    {
+      "name": "Contención y tarjetas 320×740",
+      "ok": true,
+      "detail": {
+        "width": 320,
+        "scrollWidth": 320,
+        "overlaps": false,
+        "clipped": []
+      }
+    },
+    {
+      "name": "Íconos alineados y sin solapamientos 320×740",
+      "ok": true
+    },
+    {
+      "name": "Cambio a tema claro",
+      "ok": true
+    },
+    {
+      "name": "Diálogo socios",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco socios",
+      "ok": true
+    },
+    {
+      "name": "Diálogo actividades",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco actividades",
+      "ok": true
+    },
+    {
+      "name": "Diálogo recursos",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco recursos",
+      "ok": true
+    },
+    {
+      "name": "Diálogo valor",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco valor",
+      "ok": true
+    },
+    {
+      "name": "Diálogo relaciones",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco relaciones",
+      "ok": true
+    },
+    {
+      "name": "Diálogo canales",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco canales",
+      "ok": true
+    },
+    {
+      "name": "Diálogo segmentos",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco segmentos",
+      "ok": true
+    },
+    {
+      "name": "Diálogo costos",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco costos",
+      "ok": true
+    },
+    {
+      "name": "Diálogo ingresos",
+      "ok": true
+    },
+    {
+      "name": "Escape y retorno de foco ingresos",
+      "ok": true
+    },
+    {
+      "name": "Apertura con Enter",
+      "ok": true
+    },
+    {
+      "name": "Foco contenido en diálogo",
+      "ok": true
+    },
+    {
+      "name": "Apertura por toque",
+      "ok": true
+    },
+    {
+      "name": "Mostrar todo",
+      "ok": true
+    },
+    {
+      "name": "Contraer todo",
+      "ok": true
+    },
+    {
+      "name": "Detalle íntegro en impresión",
+      "ok": true
+    },
+    {
+      "name": "Íconos completos en impresión",
+      "ok": true
+    },
+    {
+      "name": "Sin dependencias remotas",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "Sin excepciones JavaScript",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "screenshots": [
+    "canvas-completo-oscuro.png",
+    "detalle-presupuesto.png",
+    "escritorio-1440-claro.png",
+    "escritorio-1440-oscuro.png",
+    "movil-390.png",
+    "movil-detalle.png",
+    "vista-impresion.png"
+  ],
+  "pdf": "canvas-impresion.pdf",
+  "visualReview": "pending",
+  "limitations": [
+    "No mide impacto educativo, ventas, publicación en tiendas ni implementación del videojuego.",
+    "Verificación en Chrome local; no se probaron otros navegadores ni lector de pantalla real."
+  ]
+}

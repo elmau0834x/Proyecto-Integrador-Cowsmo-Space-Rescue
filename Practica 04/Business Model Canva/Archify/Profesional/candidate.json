@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Cowsmo: Space Rescue · Canvas",
+    "output": "Business Model Canva/Archify/Profesional/cowsmo-archify.html",
+    "quality_profile": "showcase",
+    "locale": "es",
+    "translations": {
+      "diagram.title": "Canvas de negocio"
+    },
+    "legend": {
+      "mode": "hidden"
+    },
+    "repository": {
+      "url": "https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue.git",
+      "revision": "7fcb54d87025dbfdac0504ac6d496cea99588b0d",
+      "link_mode": "local-only"
+    }
+  },
+  "components": [
+    {
+      "id": "socios",
+      "type": "external",
+      "icon": "none",
+      "label": "Socios clave",
+      "sublabel": "Arte; audio y pruebas previstos",
+      "pos": [
+        20,
+        30
+      ],
+      "size": [
+        220,
+        388
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "actividades",
+      "type": "external",
+      "icon": "none",
+      "label": "Actividades clave",
+      "sublabel": "Niveles; mecánicas y controles",
+      "pos": [
+        250,
+        30
+      ],
+      "size": [
+        220,
+        189
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "recursos",
+      "type": "external",
+      "icon": "none",
+      "label": "Recursos clave",
+      "sublabel": "Unity; gráficos; audio y pruebas",
+      "pos": [
+        250,
+        229
+      ],
+      "size": [
+        220,
+        189
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "valor",
+      "type": "external",
+      "icon": "none",
+      "label": "Propuesta de valor",
+      "sublabel": "Moo-ry; restauración y rescate",
+      "pos": [
+        480,
+        30
+      ],
+      "size": [
+        220,
+        388
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "relaciones",
+      "type": "external",
+      "icon": "none",
+      "label": "Relaciones con el cliente",
+      "sublabel": "Tutorial; comentarios y mejoras",
+      "pos": [
+        710,
+        30
+      ],
+      "size": [
+        220,
+        189
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "canales",
+      "type": "external",
+      "icon": "none",
+      "label": "Canales",
+      "sublabel": "Demo; APK y tiendas previstos",
+      "pos": [
+        710,
+        229
+      ],
+      "size": [
+        220,
+        189
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "segmentos",
+      "type": "external",
+      "icon": "none",
+      "label": "Segmentos de clientes",
+      "sublabel": "Jugadores de 8–25 años",
+      "pos": [
+        940,
+        30
+      ],
+      "size": [
+        220,
+        388
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "costos",
+      "type": "external",
+      "icon": "none",
+      "label": "Estructura de costos",
+      "sublabel": "MVP estimado: $4,600 MXN",
+      "pos": [
+        20,
+        428
+      ],
+      "size": [
+        565,
+        150
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    },
+    {
+      "id": "ingresos",
+      "type": "external",
+      "icon": "none",
+      "label": "Fuentes de ingresos",
+      "sublabel": "Gratis; pago único propuesto",
+      "pos": [
+        595,
+        428
+      ],
+      "size": [
+        565,
+        150
+      ],
+      "sources": [
+        {
+          "path": "Documents/GDD - Cowsmo Space Rescue.pdf",
+          "label": "Diseño; propuestas en contenido-canvas.md"
+        }
+      ]
+    }
+  ],
+  "connections": [],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "Lectura del Canvas",
+      "items": [
+        "Diseño documentado ≠ implementación.",
+        "MVP gratuito; comercial posterior propuesto.",
+        "Detalle y procedencia: vista profesional adjunta."
+      ]
+    }
+  ]
+}

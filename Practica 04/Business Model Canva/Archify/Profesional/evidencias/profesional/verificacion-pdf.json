@@ -1,0 +1,33 @@
+{
+  "kind": "Revisión textual de PDF; no es renderización visual de cada página",
+  "pdf_sha256": "960ca87ff9bbaf3c391fbc8c80d9efa9233f0bafa1a6d8576f98d9a5e56cc083",
+  "pages": 13,
+  "page_points": [
+    0,
+    0,
+    841.91998,
+    594.95996
+  ],
+  "first_page_blocks": {
+    "Socios clave": true,
+    "Actividades clave": true,
+    "Recursos clave": true,
+    "Propuesta de valor": true,
+    "Relaciones con el cliente": true,
+    "Canales": true,
+    "Segmentos de clientes": true,
+    "Estructura de costos": true,
+    "Fuentes de ingresos": true
+  },
+  "sentences_checked": 59,
+  "missing_sentences": [],
+  "totals": {
+    "4,600": true,
+    "38,000": true,
+    "42,600": true,
+    "9,350": true
+  },
+  "logo_present_first_page": true,
+  "passed": true,
+  "scope": "Histórico: extracción de la corrección de contenido anterior a los SVG. No corresponde a los bytes del PDF actual."
+}
