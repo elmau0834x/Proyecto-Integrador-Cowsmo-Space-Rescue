@@ -27,21 +27,21 @@ Las funcionalidades principales propuestas para el videojuego son:
 4. **Sistema de niveles y desafíos:** Permite avanzar en el juego mediante la superación de niveles, obstáculos o misiones.
 5. **Sistema de puntuación:** Registra los puntos obtenidos por el jugador durante sus partidas.
 6. **Consulta de resultados:** Permite visualizar el progreso y los resultados obtenidos al jugar.
-7. **Administración del videojuego:** Permite gestionar los elementos y configuraciones necesarias para el funcionamiento del juego.
+7. **Administración del videojuego:** Permite gestionar los elementos y las configuraciones necesarias para el funcionamiento del juego.
 
 ## 🖼️ Evidencias de la práctica
 
-### Diagrama 1. Roles de usuario
+### 📌 Diagrama 1. Roles de usuario
 
 En esta imagen se presenta el diagrama de roles de usuario identificados para el videojuego, junto con sus responsabilidades y participación dentro de la plataforma.
 
-![Diagrama 1 - Roles de usuario](imagenes/D1.png)
+![Diagrama 1 - Roles de usuario](./imagenes/D1.png)
 
-### Diagrama 2. Funcionalidades del videojuego
+### 📌 Diagrama 2. Funcionalidades del videojuego
 
 En esta imagen se muestran las principales funcionalidades (*features*) propuestas para el videojuego y las acciones que los usuarios podrán realizar dentro de la plataforma.
 
-![Diagrama 2 - Funcionalidades](imagenes/D2.png)
+![Diagrama 2 - Funcionalidades](./imagenes/D2.png)
 
 ## 👨‍💻 Integrantes del equipo
 
