@@ -44,9 +44,9 @@ En esta sección se organizan las prácticas relacionadas con el proyecto y sus 
 
 | Práctica | Descripción | Documentación |
 |---|---|---|
-| **Práctica 04** | Documentación y desarrollo de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica%2004) |
-| **Práctica 05** | Documentación de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica%2005/imagenes) |
-| **Práctica 06** | Diagrama de secuencia de pantallas (*sketches*) para Cowsmo: Space Rescue, con roles de usuario y navegación entre interfaces. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica%2006/README.md) |
+| **Práctica 04** | Documentación y desarrollo de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_04) |
+| **Práctica 05** | Documentación de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_05/imagenes) |
+| **Práctica 06** | Diagrama de secuencia de pantallas (*sketches*) para Cowsmo: Space Rescue, con roles de usuario y navegación entre interfaces. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_06) |
 
 > **Nota:** verifica que los nombres de las carpetas coincidan con las rutas de los enlaces. Si las prácticas se encuentran en otro repositorio, utiliza sus enlaces de GitHub correspondientes.
 
