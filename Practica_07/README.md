@@ -1,4 +1,4 @@
-# 🚀 Práctica 06: Diagrama de Secuencia de Pantallas (Sketches)
+# 🚀 Práctica 07: Diagrama de Secuencia de Pantallas (Sketches)
 
 ## 🎮 Cowsmo: Space Rescue
 
@@ -34,7 +34,7 @@ Las pantallas se organizan según su plataforma y funcionalidad, permitiendo ide
 
 ## 🔗 Visualización del proyecto
 
-👉 **[Ver diagrama interactivo en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_06/index.html)**
+👉 **[Ver diagrama interactivo en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/index.html)**
 
 ## 🛠️ Herramientas
 
