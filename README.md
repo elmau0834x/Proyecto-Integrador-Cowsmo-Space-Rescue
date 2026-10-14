@@ -78,7 +78,7 @@
 # Cowsmo: Space Rescue - Diagrama de Roles
 
 <p align="center">
-  <img src="images/Cowsmo_Dashboard.png" alt="Cowsmo Dashboard" />
+  <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Fiagrama de Roles" />
 </p>
 
 ### Ver en línea (GitHub Pages)
