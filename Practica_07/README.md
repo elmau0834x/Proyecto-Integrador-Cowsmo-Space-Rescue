@@ -34,7 +34,7 @@ Las pantallas se organizan según su plataforma y funcionalidad, permitiendo ide
 
 ## 🔗 Visualización del proyecto
 
-👉 **[Ver diagrama interactivo en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/index.html)**
+👉 **[Ver Sketches en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/sketchesCowsmo.html)**
 
 ## 🛠️ Herramientas
 
