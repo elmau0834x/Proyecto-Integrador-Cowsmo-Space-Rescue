@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17384b">
+<title>Cowsmo: Space Rescue — Sketches</title>
+<style>
+:root{--ink:#171717;--paper:#fff;--soft:#f5f5f5;--line:#aaa;--muted:#666}
+*{box-sizing:border-box}
+body{
+      margin:0;
+      color:var(--ink);
+      font-family:"Comic Sans MS","Segoe Print",cursive;
+      background-color:#102b3d;
+      background-image:
+        radial-gradient(circle at 12% 12%, #ffffffaa 0 1px, transparent 2px),
+        radial-gradient(circle at 78% 9%, #ffffff88 0 1px, transparent 2px),
+        radial-gradient(circle at 54% 23%, #ffffff88 0 1px, transparent 2px),
+        radial-gradient(circle at 91% 38%, #ffffff77 0 1px, transparent 2px),
+        radial-gradient(circle at 23% 71%, #ffffff66 0 1px, transparent 2px),
+        radial-gradient(ellipse at 8% 88%, #27627a 0, transparent 35%),
+        radial-gradient(ellipse at 95% 83%, #713b32 0, transparent 32%),
+        linear-gradient(145deg,#0b2233 0%,#17435a 52%,#142c3c 100%);
+      background-attachment:fixed;
+    }
+button,input{font:inherit;color:inherit}
+header{
+      padding:22px 5vw 16px;
+      color:#171717;
+      background:
+        repeating-linear-gradient(7deg, transparent 0 13px, #8f603022 14px 15px),
+        linear-gradient(135deg,#ead4ad,#c79b65 48%,#f0dfbd);
+      border-bottom:3px solid #171717;
+      box-shadow:0 5px 0 #081c2a88;
+    }
+.header-inner{max-width:1500px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:13px}.brand-mark{width:48px;height:48px;border:2px solid;border-radius:50%;display:grid;place-items:center;font-size:27px}
+h1{font-size:clamp(20px,3vw,32px);margin:0}header p{margin:4px 0 0;color:#555;font-size:14px}
+.header-actions{display:flex;gap:8px;flex-wrap:wrap}
+button{cursor:pointer;background:white;border:1.5px solid #222;padding:8px 12px;border-radius:4px}
+button:hover,button:focus-visible{background:#eee;outline:2px solid #555;outline-offset:2px}
+main{max-width:1500px;margin:auto;padding:20px 5vw 40px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px}
+.tab.active{background:#222;color:#fff}
+.intro{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:16px}
+.intro h2{margin:0;font-size:22px}.intro p{margin:5px 0 0;color:#555;font-size:14px}
+.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(290px,.8fr);gap:18px;align-items:start}
+.panel{border:2px solid #222;background:#fff;border-radius:5px;overflow:hidden;box-shadow:0 10px 28px #0005}
+.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1.5px solid #222}
+.panel-head h3{margin:0;font-size:16px}.panel-head small{color:#555}
+.map-viewport{overflow:visible;max-height:none;background:#fff;padding:15px}
+.map-grid{display:grid;grid-template-columns:repeat(4,minmax(130px,1fr));gap:17px;min-width:580px}
+.screen-card{border:0;padding:0;background:transparent;text-align:left;min-width:0}
+.screen-card.selected .phone{border:3px solid #111;box-shadow:0 0 0 3px #ddd}
+.card-title{display:flex;gap:6px;align-items:center;margin-bottom:6px;font-size:13px;font-weight:bold}
+.number{width:22px;height:22px;border:1.5px solid #111;border-radius:50%;display:grid;place-items:center;flex:none}
+.phone{height:260px;border:2.5px solid #222;border-radius:23px;background:#fff;padding:17px 9px 9px;position:relative;overflow:hidden;box-shadow:2px 2px 0 #bbb}
+.phone:before{content:"";position:absolute;top:5px;left:50%;transform:translateX(-50%);height:4px;width:42px;border:1px solid #222;border-radius:4px}
+.phone.landscape{width:100%;height:205px;border-radius:20px;padding:12px 10px 8px}
+.phone.landscape:before{top:50%;left:5px;transform:translateY(-50%);height:38px;width:4px}
+.phone.landscape .screen{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:min-content;align-content:start;gap:4px;overflow-y:auto;overflow-x:hidden;height:calc(100% - 10px);scrollbar-width:thin;scrollbar-color:#888 #eee;padding-right:3px}
+.phone.landscape .screen h4{grid-column:1/-1;font-size:11px;margin:0 0 2px}
+.phone.landscape .box-x{height:38px}
+.phone.landscape .field{min-height:18px;padding:3px;font-size:7px;line-height:1.15}
+.phone.landscape .tile{min-height:30px;padding:3px 1px;font-size:7px;line-height:1.1}
+.phone.landscape .sketch-btn{padding:4px 2px;font-size:7px;line-height:1.1}
+.detail .phone.landscape{max-width:100%;height:320px;border-radius:25px;padding:20px 18px 12px}
+.detail .phone.landscape:before{left:7px;height:48px}
+.detail .phone.landscape .screen{grid-template-columns:1fr 1fr;gap:8px}
+.detail .phone.landscape .screen h4{font-size:18px}
+.detail .phone.landscape .box-x{height:90px}
+.detail .phone.landscape .field{font-size:11px;min-height:28px;padding:6px}
+.detail .phone.landscape .sketch-btn{font-size:10px;padding:7px}
+.detail .phone.landscape .tile{font-size:10px;min-height:46px;padding:6px 3px}
+.phone.landscape .screen .box-x{grid-column:1}
+.phone.landscape .screen .small-grid{grid-column:1/-1;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}
+.phone.landscape .screen .navbar{grid-column:1/-1;font-size:6px;padding-top:3px}
+.phone.landscape .screen .line{height:3px}
+.detail .phone.landscape{height:340px}
+.detail .phone.landscape .screen{overflow-y:auto;overflow-x:hidden;height:calc(100% - 10px);scrollbar-width:thin;scrollbar-color:#888 #eee;padding-right:5px}
+.detail .phone.landscape .screen .small-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+
+.status{font:7px Arial,sans-serif;display:flex;justify-content:space-between;margin-bottom:8px}
+.screen{height:calc(100% - 13px);display:flex;flex-direction:column;gap:7px;overflow:hidden}
+.screen h4{font-size:13px;text-align:center;margin:3px 0 5px}
+.line{height:4px;background:repeating-linear-gradient(90deg,#222 0 14px,transparent 14px 18px);opacity:.75;margin:2px 0}
+.field{border:1.3px solid #222;min-height:22px;padding:4px;font:8px Arial,sans-serif}
+.box-x{height:60px;border:1.5px solid #222;position:relative;display:grid;place-items:center;font-size:25px}
+.box-x:before,.box-x:after{content:"";position:absolute;left:0;top:50%;width:100%;height:1px;background:#999}
+.box-x:before{transform:rotate(27deg)}.box-x:after{transform:rotate(-27deg)}
+.sketch-btn{border:1.5px solid #222;text-align:center;padding:5px;font:8px Arial,sans-serif;margin-top:2px}
+.small-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+.tile{border:1.3px solid #222;padding:5px 2px;text-align:center;font-size:8px;min-height:42px}
+.navbar{display:flex;justify-content:space-around;border-top:1px solid #222;padding-top:5px;margin-top:auto;font:7px Arial,sans-serif}
+.stat{border:1px solid #222;height:7px;margin:3px 0}.stat span{display:block;background:#aaa;height:100%}
+.mini-chart{height:48px;border-left:1px solid;border-bottom:1px solid;position:relative;margin:6px 3px}
+.mini-chart:after{content:"";position:absolute;left:8%;right:5%;top:15px;height:25px;border-top:2px solid #333;transform:skewY(-18deg)}
+.detail{padding:16px;min-height:620px}
+.detail .phone{width:100%;max-width:310px;height:480px;margin:14px auto 18px;padding:22px 15px 14px;border-width:3px;border-radius:30px;box-shadow:3px 3px 0 #bbb}
+.detail .screen{gap:10px}.detail .screen h4{font-size:19px}.detail .field{font-size:12px;min-height:35px;padding:8px}.detail .box-x{height:105px;font-size:42px}.detail .tile{font-size:11px;min-height:62px;padding:9px 3px}.detail .sketch-btn{font-size:12px;padding:9px}.detail .line{height:6px}.detail .navbar{font-size:10px;padding-top:9px}
+.meta{display:flex;justify-content:space-between;gap:10px;align-items:center;font:12px Arial,sans-serif;color:#555}
+.description{font:14px/1.5 Arial,sans-serif;color:#333;margin:12px 0}
+.connections{border-top:1px solid #aaa;padding-top:12px;font:13px Arial,sans-serif}
+.connections h4{margin:0 0 8px}.connection-buttons{display:flex;gap:7px;flex-wrap:wrap}
+.note{font:12px/1.5 Arial,sans-serif;color:#555;margin-top:12px}
+footer{max-width:1500px;margin:auto;padding:0 5vw 25px;color:#f1e3ca;font:12px Arial,sans-serif;text-shadow:0 1px 2px #000}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}.detail{min-height:0}.detail .phone{height:440px}.map-viewport{overflow:visible;max-height:none}}
+@media(max-width:600px){.detail .phone.landscape{height:300px;padding:18px 14px 10px}.detail .phone.landscape .screen{gap:5px}.detail .phone.landscape .screen h4{font-size:15px}header{padding:16px}.header-inner{align-items:flex-start}.brand-mark{width:38px;height:38px}.header-actions{display:none}main{padding:15px 12px 28px}.intro{align-items:flex-start;flex-direction:column}.map-grid{grid-template-columns:repeat(2,minmax(125px,1fr));min-width:0;gap:14px}.phone{height:240px}.map-viewport{padding:10px}.detail .phone{max-width:280px}}
+@media print{body{background:#fff}.tabs,.header-actions,.panel-head button,.connections{display:none}.layout{display:block}.detail{display:none}.map-viewport{max-height:none;overflow:visible}.map-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* Ajuste de proporción para la vista ampliada del videojuego: pantalla horizontal 16:9 */
+.detail .phone.landscape{
+  width:100%;
+  max-width:none;
+  height:auto;
+  aspect-ratio:16 / 9;
+  min-height:0;
+  margin:14px auto 18px;
+  padding:clamp(12px,2vw,22px) clamp(14px,2.5vw,26px) 12px;
+  border-radius:26px;
+  overflow:hidden;
+}
+.detail .phone.landscape .screen{
+  height:calc(100% - 13px);
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  grid-auto-rows:min-content;
+  align-content:start;
+  gap:clamp(5px,1vw,10px);
+}
+.detail .phone.landscape .screen h4{
+  grid-column:1 / -1;
+  font-size:clamp(14px,1.5vw,20px);
+  margin:2px 0 6px;
+}
+.detail .phone.landscape .box-x{height:clamp(48px,7vw,100px)}
+.detail .phone.landscape .field{font-size:clamp(9px,1vw,12px);min-height:clamp(22px,3vw,35px);padding:clamp(4px,.8vw,8px)}
+.detail .phone.landscape .tile{font-size:clamp(8px,1vw,11px);min-height:clamp(32px,4vw,52px);padding:clamp(4px,.8vw,9px)}
+.detail .phone.landscape .sketch-btn{font-size:clamp(9px,1vw,12px);padding:clamp(5px,.8vw,9px)}
+.detail .phone.landscape .navbar{grid-column:1 / -1}
+@media(max-width:600px){
+  .detail .phone.landscape{aspect-ratio:16 / 9;width:100%;height:auto;max-width:none;border-radius:18px}
+}
+
+
+/* Corrección final: el mockup seleccionado del videojuego conserva formato horizontal y muestra todo el contenido */
+.detail .phone.landscape{
+  display:block;
+  width:100%;
+  max-width:none;
+  height:auto !important;
+  aspect-ratio:16 / 9;
+  min-height:0;
+  padding:clamp(12px,1.5vw,20px) clamp(14px,2vw,24px) 10px;
+  margin:14px auto 18px;
+  overflow:hidden;
+  border-radius:clamp(16px,2vw,26px);
+}
+.detail .phone.landscape .status{font-size:clamp(6px,.55vw,9px);margin-bottom:clamp(3px,.5vw,7px)}
+.detail .phone.landscape .screen{
+  height:calc(100% - 18px);
+  min-height:0;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  grid-auto-rows:min-content;
+  align-content:start;
+  gap:clamp(3px,.65vw,8px);
+}
+.detail .phone.landscape .screen h4{
+  grid-column:1/-1;
+  font-size:clamp(12px,1.2vw,19px);
+  line-height:1.1;
+  margin:1px 0 clamp(2px,.5vw,6px);
+}
+.detail .phone.landscape .box-x{height:clamp(38px,5.5vw,78px);min-height:0}
+.detail .phone.landscape .field{
+  min-height:clamp(18px,2.2vw,29px);
+  padding:clamp(3px,.45vw,6px);
+  font-size:clamp(8px,.8vw,11px);
+  line-height:1.15;
+}
+.detail .phone.landscape .tile{
+  min-height:clamp(26px,3vw,42px);
+  padding:clamp(3px,.45vw,6px);
+  font-size:clamp(8px,.8vw,11px);
+  line-height:1.15;
+}
+.detail .phone.landscape .sketch-btn{
+  min-height:0;
+  padding:clamp(4px,.55vw,7px);
+  margin-top:0;
+  font-size:clamp(8px,.8vw,11px);
+  line-height:1.15;
+}
+.detail .phone.landscape .small-grid{gap:clamp(3px,.5vw,6px)}
+.detail .phone.landscape .navbar{grid-column:1/-1;margin-top:0;padding-top:3px;font-size:clamp(7px,.7vw,10px)}
+.detail .phone.landscape .stat{margin:0}
+.detail .phone.landscape .mini-chart{height:clamp(24px,3vw,42px);margin:2px}
+@media(max-width:1000px){
+  .detail .phone.landscape{aspect-ratio:16 / 9;width:100%;height:auto !important}
+}
+@media(max-width:600px){
+  .detail .phone.landscape{aspect-ratio:16 / 9;width:100%;height:auto !important;padding:12px 12px 8px}
+  .detail .phone.landscape .screen{gap:3px}
+  .detail .phone.landscape .screen h4{font-size:12px}
+  .detail .phone.landscape .field,.detail .phone.landscape .sketch-btn{font-size:8px;padding:3px}
+}
+
+
+/* Ajustes finales: contenido del videojuego desplazable y pantallas Flutter numeradas en secuencia */
+.phone.landscape .screen,
+.detail .phone.landscape .screen {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #eee;
+  padding-right: 5px;
+  align-content: start;
+}
+.phone.landscape .screen > * { min-width: 0; }
+.detail .phone.landscape { height: 340px; }
+.detail .phone.landscape .screen { max-height: 100%; }
+@media(max-width:600px) {
+  .detail .phone.landscape { height: 300px; }
+}
+
+
+/* Contraste del encabezado de sección sobre el fondo espacial */
+.intro h2,
+.intro p,
+#screenCount {
+  color: #fff !important;
+  text-shadow: 0 1px 3px #0008;
+}
+
+
+/* El mapa de sketches crece con la página: scroll general del navegador */
+.map-viewport { overflow: visible !important; max-height: none !important; }
+.map-grid { overflow: visible; }
+
+</style>
+</head>
+<body>
+<header><div class="header-inner">
+<div class="brand"><div class="brand-mark">🐄</div><div><h1>Cowsmo: Space Rescue</h1><p>Sketches de baja fidelidad · exploración espacial y materiales reciclados</p></div></div>
+<div class="header-actions"><button id="printBtn">Imprimir / guardar PDF</button><button id="allBtn">Ver mapa completo</button></div>
+</div></header>
+<main>
+<div class="tabs" id="tabs"></div>
+<section class="intro"><div><h2 id="sectionTitle">PWA</h2><p id="sectionDesc">Explora los bocetos y sus conexiones en un universo inspirado en cartón reciclado, planetas y espacio.</p></div><div><b id="screenCount">12 pantallas</b></div></section>
+<div class="layout">
+<section class="panel">
+<div class="panel-head"><div><h3>Mapa de sketches</h3><small>Selecciona una pantalla para ver el detalle</small></div><div><button id="zoomOut" aria-label="Reducir">−</button> <button id="zoomIn" aria-label="Ampliar">+</button></div></div>
+<div class="map-viewport" id="viewport"><div class="map-grid" id="mapGrid"></div></div>
+</section>
+<section class="panel">
+<div class="panel-head"><div><h3>Sketch seleccionado</h3><small id="detailCode">Pantalla 01</small></div><button id="backBtn">↶ Volver</button></div>
+<div class="detail" id="detail"></div>
+</section>
+</div>
+</main>
+<footer>Representación esquemática en escala de grises inspirada en el universo espacial y los materiales reciclados de Cowsmo. Las imágenes se indican con cuadros y una X; los textos secundarios, con líneas; los botones son rectángulos simples. Los datos son ilustrativos.</footer>
+<script>
+const screens = [
+{id:'P01',group:'pwa',name:'Login',desc:'Inicio de sesión con correo y contraseña; incluye acceso para recuperar la contraseña.',title:'COWSMO',icon:'🔒',fields:['Correo electrónico','Contraseña'],buttons:['Iniciar sesión','Crear cuenta','¿Olvidaste tu contraseña?'],next:['Registro','Inicio PWA'],kind:'login'},
+{id:'P02',group:'pwa',name:'Registro',desc:'Formulario para crear una cuenta y validar los datos ingresados.',title:'Crear cuenta',fields:['Nombre de usuario','Correo electrónico','Contraseña','Confirmar contraseña'],buttons:['Registrarme','Volver al login'],next:['Login'],kind:'register'},
+{id:'P03',group:'pwa',name:'Inicio PWA',desc:'Página principal con saludo, resumen y accesos rápidos a las funciones principales.',title:'Cowsmo',image:true,tiles:['Progreso','Logros','Wiki-Cowsmo','Perfil'],buttons:['Explorar'],next:['Wiki-Cowsmo','Progreso','Perfil'],kind:'home'},
+{id:'P04',group:'pwa',name:'Wiki-Cowsmo',desc:'Exploración de personajes, planetas, lugares, herramientas e historia con búsqueda y favoritos.',title:'Wiki-Cowsmo',search:true,tiles:['Personajes','Planetas y lugares','Herramientas','Historia y lore'],buttons:['Buscar','Ver ficha','☆ Favorito'],next:['Ficha de personaje','Ficha de lugar'],kind:'wiki'},
+{id:'P05',group:'shared',name:'Perfil y datos',desc:'Pantalla unificada para consultar y editar los datos personales y administrar la cuenta.',title:'Mi perfil',avatar:true,fields:['Nombre de usuario','Correo electrónico'],buttons:['Editar perfil','Cambiar contraseña','Cuenta vinculada'],next:['Configuración','Sincronización'],kind:'profile'},
+{id:'P06',group:'shared',name:'Progreso y estadísticas',desc:'Resumen del avance, porcentaje, niveles completados, planetas explorados y tiempo de juego.',title:'Mi progreso',chart:true,buttons:['General','Niveles','Tiempo de juego'],next:['Logros','Perfil'],kind:'progress'},
+{id:'P07',group:'shared',name:'Logros',desc:'Muestra logros desbloqueados, pendientes y las recompensas obtenidas.',title:'Mis logros',tiles:['Primer paso','Explorador','Amigo alien','Planeta limpio','???','???'],buttons:['Desbloqueados','Pendientes'],next:['Progreso y estadísticas'],kind:'achievements'},
+{id:'P08',group:'shared',name:'Configuración',desc:'Preferencias de notificaciones, apariencia, privacidad, seguridad y cierre de sesión.',title:'Configuración',rows:['Notificaciones','Apariencia','Idioma','Privacidad y seguridad','Sincronización de cuenta','Ayuda'],buttons:['Cerrar sesión'],next:['Perfil y datos','Sincronización'],kind:'settings'},
+ {id:'FLOGIN',group:'flutter',name:'Login móvil',desc:'Inicio de sesión en la aplicación móvil con correo, contraseña y recuperación de acceso.',title:'COWSMO',fields:['Correo electrónico','Contraseña'],buttons:['Iniciar sesión','Crear cuenta','Recuperar contraseña'],next:['Registro móvil','Inicio Flutter'],kind:'login'},
+{id:'FREG',group:'flutter',name:'Registro móvil',desc:'Creación de una cuenta desde Flutter y validación de los datos.',title:'Crear cuenta',fields:['Nombre de usuario','Correo electrónico','Contraseña','Confirmar contraseña'],buttons:['Registrarme','Volver al login'],next:['Login móvil'],kind:'register'},
+{id:'F01',group:'flutter',name:'Inicio Flutter',desc:'Inicio móvil con navegación inferior y accesos rápidos a progreso, logros, Wiki y perfil.',title:'Cowsmo',image:true,tiles:['Progreso','Logros','Wiki-Cowsmo','Perfil'],buttons:['Inicio','Wiki','Logros','Perfil'],next:['Wiki móvil','Perfil y datos'],kind:'home'},
+{id:'F02',group:'flutter',name:'Wiki-Cowsmo móvil',desc:'Catálogo móvil con buscador, filtros y fichas de personajes, planetas, herramientas e historia.',title:'Wiki-Cowsmo',search:true,rows:['Moo-ry · Protagonista','Reina Nyx · Antagonista','Planeta Verde · Lugar','Nave Estelar · Herramienta'],buttons:['Todos','Personajes','Planetas','Herramientas'],next:['Ficha de personaje','Ficha de lugar'],kind:'wiki'},
+ {id:'GLOGIN',group:'game',name:'Login del videojuego',desc:'Inicio de sesión para recuperar el progreso del jugador y usar la sincronización.',title:'COWSMO SPACE RESCUE',fields:['Correo electrónico','Contraseña'],buttons:['Iniciar sesión','Crear cuenta','Jugar sin cuenta'],next:['Registro del videojuego','Menú principal'],kind:'login'},
+{id:'GREG',group:'game',name:'Registro del videojuego',desc:'Creación de una cuenta para guardar y sincronizar el avance entre plataformas.',title:'Crear cuenta',fields:['Nombre de jugador','Correo electrónico','Contraseña','Confirmar contraseña'],buttons:['Crear cuenta','Volver'],next:['Login del videojuego'],kind:'register'},
+{id:'GSET',group:'game',name:'Configuración del videojuego',desc:'Opciones de volumen, controles, calidad gráfica e idioma.',title:'Configuración',rows:['Música　━━━○','Efectos de sonido　━━○','Controles','Calidad gráfica','Idioma'],buttons:['Guardar','Volver al menú'],next:['Menú principal','Menú de pausa'],kind:'settings'},
+{id:'GTUT',group:'game',name:'Tutorial',desc:'Explicación de movimiento, controles, interacción con objetos y mecánicas principales.',title:'Tutorial',image:true,rows:['Mover a Moo-ry','Saltar y esquivar','Interactuar con objetos','Completar objetivos'],buttons:['Anterior','Siguiente','Omitir tutorial'],next:['Selección de niveles'],kind:'tutorial'},
+{id:'GPAUSE',group:'game',name:'Menú de pausa',desc:'Opciones disponibles durante una partida para reanudar, reiniciar o salir del nivel.',title:'PAUSA',buttons:['Reanudar','Reiniciar nivel','Configuración','Salir al menú'],next:['Nivel en juego','Configuración del videojuego','Menú principal'],kind:'pause'},
+{id:'GSYNC',group:'game',name:'Sincronización',desc:'Estado de la cuenta, conexión y guardado del progreso y los logros.',title:'Sincronización',rows:['Cuenta vinculada','Conexión','Último guardado','Progreso y logros'],buttons:['Sincronizar ahora','Volver'],next:['Menú principal'],kind:'sync'},
+{id:'G01',group:'game',name:'Menú principal',desc:'Entrada al videojuego con opciones para jugar, consultar el perfil y abrir la Wiki-Cowsmo.',title:'COWSMO SPACE RESCUE',image:true,buttons:['JUGAR','PERFIL','WIKI-COWSMO','CONFIGURACIÓN','SALIR'],next:['Selección de niveles','Perfil del jugador','Wiki-Cowsmo'],kind:'game'},
+{id:'G02',group:'game',name:'Selección de niveles',desc:'Mapa de planetas con niveles disponibles y bloqueados. Permite continuar la aventura y guardar el avance.',title:'Seleccionar nivel',tiles:['Planeta 1 · Bosque','Planeta 2 · Desierto','Planeta 3 · Hielo','Planeta 4 · Volcánico','Planeta 5 · Espacial','Planeta 6 · ???'],buttons:['Jugar nivel','Continuar'],next:['Tutorial','Nivel en juego'],kind:'levels'}
+];
+const groups=[
+{id:'pwa',label:'PWA',title:'PWA',desc:'Navegación web con cuenta, progreso, logros y Wiki-Cowsmo.'},
+{id:'shared',label:'PWA / Flutter · cuenta compartida',title:'PWA / Flutter · cuenta compartida',desc:'Pantallas comunes entre la PWA y la aplicación móvil.'},
+{id:'flutter',label:'App Flutter',title:'App Flutter',desc:'Versión móvil con acceso rápido a las funciones principales.'},
+{id:'game',label:'Videojuego',title:'Videojuego',desc:'Pantallas horizontales del videojuego, niveles, tutorial y conexión con el ecosistema.'}
+];
+let active='pwa',selected='P01',scale=1;
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function currentScreens(){
+ let list=screens.filter(s=>s.group===active|| (active==='pwa'&&s.group==='shared') || (active==='flutter'&&s.group==='shared'));
+ if(active==='flutter'){
+   const priority={'FLOGIN':0,'FREG':1,'F01':2,'F02':3,'P05':4,'P06':5,'P07':6,'P08':7};
+   list.sort((a,b)=>(priority[a.id]??99)-(priority[b.id]??99));
+ }
+ return list;
+}
+function sketch(s,large=false){
+let body=`<h4>${esc(s.title||s.name)}</h4>`;
+if(s.kind==='login')body+=`<div class="field">✉ ${s.fields[0]}</div><div class="field">♙ ${s.fields[1]}</div><div style="font:8px Arial">□ Recordarme　¿Olvidaste tu contraseña?</div><div class="sketch-btn">Iniciar sesión</div><div class="line"></div><div class="sketch-btn">Crear cuenta</div>`;
+else if(s.kind==='register')body+=s.fields.map(x=>`<div class="field">□ ${esc(x)}</div>`).join('')+`<div class="sketch-btn">Registrarme</div><div class="line"></div>`;
+else if(s.kind==='pause')body+=`<div class="box-x">Ⅱ</div>`+(s.buttons||[]).map(x=>`<div class="sketch-btn">${esc(x)}</div>`).join('');
+else if(s.kind==='tutorial')body+=`<div class="box-x"></div>`+(s.rows||[]).map(x=>`<div class="field">→ ${esc(x)}</div>`).join('')+(s.buttons||[]).map(x=>`<div class="sketch-btn">${esc(x)}</div>`).join('');
+else if(s.kind==='sync')body+=(s.rows||[]).map(x=>`<div class="field">○ ${esc(x)}　✓</div>`).join('')+(s.buttons||[]).map(x=>`<div class="sketch-btn">${esc(x)}</div>`).join('');
+else{
+if(s.search)body+=`<div class="field">⌕ Buscar contenido...</div>`;
+if(s.avatar)body+=`<div class="box-x">◯</div>`;
+if(s.image)body+=`<div class="box-x"></div>`;
+if(s.chart)body+=`<div>Avance general　60%</div><div class="stat"><span style="width:60%"></span></div><div class="mini-chart"></div><div class="small-grid"><div class="tile">12 niveles<br>completados</div><div class="tile">24 h<br>de juego</div></div>`;
+if(s.rows)body+=s.rows.map(x=>`<div class="field">○ ${esc(x)}　›</div>`).join('');
+if(s.tiles)body+=`<div class="small-grid">${s.tiles.map(x=>`<div class="tile">${s.kind==='achievements'?'☆':s.kind==='levels'?'◉':'□'}<br>${esc(x)}</div>`).join('')}</div>`;
+if(s.fields)body+=s.fields.map(x=>`<div class="field">${esc(x)}</div>`).join('');
+if(s.buttons)body+=s.buttons.map(x=>`<div class="sketch-btn">${esc(x)}</div>`).join('');
+}
+if(!large)body+=`<div class="navbar">⌂ Inicio　☆ Logros　▤ Wiki　♙ Perfil</div>`;
+return `<div class="phone ${s.group==='game'?'landscape':''}"><div class="status"><span>9:41 AM</span><span>▴ ▰</span></div><div class="screen">${body}</div></div>`;
+}
+function render(){
+document.getElementById('tabs').innerHTML=groups.map(g=>`<button class="tab ${g.id===active?'active':''}" data-group="${g.id}">${g.label}</button>`).join('');
+const g=groups.find(x=>x.id===active);document.getElementById('sectionTitle').textContent=g.title;document.getElementById('sectionDesc').textContent=g.desc;
+const list=currentScreens();if(!list.some(s=>s.id===selected))selected=list[0].id;
+document.getElementById('screenCount').textContent=list.length+' sketches';
+document.getElementById('screenCount').style.color = active==='shared' ? '#fff' : '';
+document.getElementById('mapGrid').style.transform=`scale(${scale})`;document.getElementById('mapGrid').style.transformOrigin='top left';
+document.getElementById('mapGrid').innerHTML=list.map((s,i)=>`<button class="screen-card ${s.id===selected?'selected':''}" data-screen="${s.id}"><div class="card-title"><span class="number">${i+1}</span>${esc(s.name)}</div>${sketch(s)}</button>`).join('');
+renderDetail();
+}
+function renderDetail(){
+const s=screens.find(x=>x.id===selected);document.getElementById('detailCode').textContent=s.id+' · '+s.group.toUpperCase();
+document.getElementById('detail').innerHTML=`<div class="meta"><b>${esc(s.name)}</b><span>Sketch de baja fidelidad</span></div><p class="description">${esc(s.desc)}</p>${sketch(s,true)}<div class="connections"><h4>Conexiones de navegación</h4><div class="connection-buttons">${s.next.map(n=>`<button data-next="${esc(n)}">${esc(n)} →</button>`).join('')}</div><p class="note">Los botones representan acciones previstas; este prototipo documenta la estructura, no implementa autenticación ni guardado real.</p></div>`;
+}
+document.getElementById('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-group]');if(!b)return;active=b.dataset.group;selected=currentScreens()[0].id;scale=1;render();});
+document.getElementById('mapGrid').addEventListener('click',e=>{const b=e.target.closest('[data-screen]');if(!b)return;selected=b.dataset.screen;render();});
+document.getElementById('detail').addEventListener('click',e=>{const b=e.target.closest('[data-next]');if(!b)return;const target=screens.find(s=>s.name===b.dataset.next||s.id===b.dataset.next);if(target){selected=target.id;active=target.group;render();}});
+document.getElementById('zoomIn').onclick=()=>{scale=Math.min(1.25,scale+.1);render();};
+document.getElementById('zoomOut').onclick=()=>{scale=Math.max(.65,scale-.1);render();};
+document.getElementById('printBtn').onclick=()=>window.print();
+document.getElementById('allBtn').onclick=()=>{active='pwa';scale=1;selected='P01';render();document.getElementById('viewport').scrollTo({top:0,left:0,behavior:'smooth'});};
+document.getElementById('backBtn').onclick=()=>{document.getElementById('viewport').scrollTo({top:0,left:0,behavior:'smooth'});};
+render();
+</script>
+</body>
+</html>
