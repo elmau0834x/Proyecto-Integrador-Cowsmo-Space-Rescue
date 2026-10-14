@@ -109,7 +109,7 @@
 | <img src="./src/img/Entorno Contaminado & Chatarra (Nébularis _ Dominio Industrial).png" width="380" alt="Paleta Nébularis"/> | <img src="./src/img/Interfaz de Usuario & Materiales Teatrales (UI _ HUD).png" width="380" alt="Paleta UI HUD"/> |
 | *Gris industrial, marrón óxido, morado tóxico y verde neón.* | *Marrón kraft texturizado, rojo estampilla y blanco recorte.* |
 
-### Dirección de Arte y Estética "Paper Mario"
+### Dirección de Arte y Estética
 - **Estilo Artístico (2.5D Papercraft):** Personajes y accesorios en recortes 2D planos (*cutout Sprites*) que se desplazan dentro de escenarios tridimensionales construidos como dioramas de cartón, empaques reciclados y material escolar/industrial.
 - **Coherencia con el Mensaje Ambiental:** La estética de cartón y papel reforzada de forma directa con la mecánica de **reciclaje (ODS 12)**; los objetos y estructuras del mundo lucen explícitamente reutilizados.
 - **Animación & Efectos (VFX):**
