@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cowsmo: Space Rescue — Diagramas de navegación por aplicación</title>
+<style>
+:root{--green:#28a85c;--ink:#252525;--muted:#6b7280;--line:#8b8b8b;--border:#dedede;--paper:#fff}
+*{box-sizing:border-box}
+body{margin:0;background:#f5f6f5;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{padding:24px clamp(16px,4vw,48px);background:#fff;border-bottom:1px solid #ddd;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+h1{font-size:clamp(20px,2.4vw,30px);margin:0 0 5px;letter-spacing:.02em}
+header p{margin:0;color:#666;font-size:14px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+button{border:1px solid #999;background:#fff;border-radius:5px;padding:9px 13px;font-size:13px;cursor:pointer}
+button:hover{background:#f0f0f0}
+nav{display:flex;gap:8px;flex-wrap:wrap;padding:15px clamp(16px,4vw,48px);background:#fff;border-bottom:1px solid #ddd}
+nav button.active{background:#202020;color:#fff;border-color:#202020}
+main{max-width:1600px;margin:auto;padding:24px clamp(12px,3vw,36px) 40px}
+.diagram{background:#fff;border:1px solid #ddd;border-radius:6px;margin-bottom:28px;box-shadow:0 2px 8px #00000008;overflow:hidden}
+.diagram.hidden{display:none}
+.diagram-head{padding:18px 22px 14px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.diagram-head h2{margin:0 0 5px;font-size:18px;letter-spacing:.12em;text-transform:uppercase}
+.diagram-head p{margin:0;color:#777;font-size:13px}
+.role{font-size:12px;font-weight:bold;letter-spacing:.12em;color:#4b5563}
+.canvas{padding:22px;overflow-x:auto}
+.lane{min-width:980px;position:relative;padding:0 0 22px 112px;margin-bottom:22px;border-bottom:1px solid #eee}
+.lane:last-child{border-bottom:0;margin-bottom:0}
+.lane-label{position:absolute;left:0;top:8px;width:92px;padding-left:10px;border-left:3px solid var(--green);font-size:10px;letter-spacing:.12em;font-weight:bold;color:#5d6670;text-transform:uppercase;line-height:1.4}
+.flow{display:flex;align-items:center;gap:0;min-width:max-content;padding:4px 0 8px}
+.node{width:132px;min-height:91px;flex:0 0 132px;border:1.5px solid #d8d8d8;border-radius:6px;padding:9px 8px;background:#fff;text-align:left;position:relative;box-shadow:0 1px 2px #00000008;cursor:pointer}
+.node:hover,.node.selected{border:2px solid var(--green);padding:8px 7px}
+.node.start{border:2px solid var(--green);background:#fbfffc}
+.node .id{display:block;font-size:10px;color:#7c7c7c;margin-bottom:5px;font-weight:bold}
+.node strong{display:block;font-size:12px;line-height:1.25;margin-bottom:6px}
+.node small{display:block;font-size:10px;color:#777;line-height:1.3}
+.fake-lines{height:4px;background:#e4e4e4;margin-top:4px;width:84%;border-radius:2px}
+.fake-lines.short{width:54%}
+.fake-button{height:6px;width:34px;background:var(--green);margin-top:7px;border-radius:2px}
+.connector{height:2px;background:#999;width:27px;flex:0 0 27px;position:relative}
+.connector:after{content:"";position:absolute;right:-1px;top:-4px;border-left:7px solid #777;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.connector span{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10px;color:#686868;background:#fff;padding:2px 4px}
+.node-detail{margin:0 22px 18px;padding:12px 14px;border-top:1px solid #eee;background:#fcfcfc;display:none;font-size:13px;line-height:1.5}
+.node-detail.visible{display:block}
+.node-detail strong{display:block;margin-bottom:4px}
+.global-note{color:#555;font-size:12px;line-height:1.5;margin:14px 3px 0}
+footer{padding:0 clamp(16px,4vw,48px) 24px;color:#666;font-size:12px}
+@media(max-width:700px){.canvas{padding:14px}.diagram-head{padding:15px}.node-detail{margin:0 14px 14px}}
+@media print{body{background:#fff}header{padding:10px 0}.actions,nav{display:none!important}main{padding:10px 0}.diagram{box-shadow:none;break-inside:avoid}.diagram.hidden{display:block}.canvas{overflow:visible;padding:12px}.lane{min-width:0;padding-left:90px;overflow:visible}.flow{transform:scale(.82);transform-origin:left center;margin-right:-180px}.node-detail{display:none!important}.global-note{color:#333}}
+</style>
+</head>
+<body>
+<header>
+<div><h1>COWSMO: SPACE RESCUE</h1><p>Diagramas de navegación · un único rol: Usuario</p></div>
+<div class="actions"><button onclick="window.print()">Imprimir / guardar PDF</button><button onclick="showApp('all')">Mostrar las tres aplicaciones</button></div>
+</header>
+<nav>
+<button class="active" data-app="all">Todas</button>
+<button data-app="pwa">PWA</button>
+<button data-app="flutter">App Flutter</button>
+<button data-app="game">Videojuego</button>
+</nav>
+<main>
+<section class="diagram" data-diagram="pwa">
+<div class="diagram-head"><div><h2>Aplicación PWA</h2><p>Acceso, navegación web, contenido y seguimiento del progreso.</p></div><div class="role">ROL · USUARIO</div></div>
+<div class="canvas">
+<div class="lane"><div class="lane-label">Acceso</div><div class="flow">
+<button class="node start" data-title="Landing / Login" data-info="Pantalla de entrada de la PWA. Permite iniciar sesión con correo y contraseña o ir al registro."><span class="id">E1</span><strong>Landing / Login</strong><small>Entrar o crear cuenta</small><div class="fake-lines"></div><div class="fake-lines short"></div><div class="fake-button"></div></button>
+<div class="connector"><span>Iniciar sesión</span></div>
+<button class="node" data-title="Iniciar sesión" data-info="Valida las credenciales del usuario para acceder a su cuenta. Incluye recuperación de contraseña."><span class="id">E2</span><strong>Iniciar sesión</strong><small>Correo · contraseña</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>¿Olvidaste?</span></div>
+<button class="node" data-title="Recuperar contraseña" data-info="Solicita los datos necesarios para recuperar el acceso a la cuenta."><span class="id">E3</span><strong>Recuperar contraseña</strong><small>Restablecer acceso</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Registrarse</span></div>
+<button class="node" data-title="Crear cuenta" data-info="Formulario para crear una cuenta de usuario y validar los datos ingresados."><span class="id">E4</span><strong>Crear cuenta</strong><small>Nombre · correo · contraseña</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Navegación</div><div class="flow">
+<button class="node start" data-title="Inicio PWA" data-info="Página principal con resumen de progreso y accesos rápidos a las funciones de la aplicación."><span class="id">E5</span><strong>Inicio</strong><small>Resumen y accesos rápidos</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-button"></div></button>
+<div class="connector"><span>Explorar</span></div>
+<button class="node" data-title="Wiki-Cowsmo" data-info="Explora personajes, planetas, lugares, herramientas e historia. Incluye búsqueda, filtros y favoritos."><span class="id">E6</span><strong>Wiki-Cowsmo</strong><small>Personajes · lugares · historia</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Consultar</span></div>
+<button class="node" data-title="Ficha de contenido" data-info="Muestra la información, imagen y detalles de un personaje, lugar, herramienta u otro elemento del universo."><span class="id">E7</span><strong>Ficha de contenido</strong><small>Imagen y detalles</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Volver</span></div>
+<button class="node" data-title="Progreso y estadísticas" data-info="Muestra gráficas de avance, niveles completados y tiempo de juego."><span class="id">E8</span><strong>Progreso y estadísticas</strong><small>Gráficas · niveles · tiempo</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Ver logros</span></div>
+<button class="node" data-title="Logros" data-info="Lista los logros desbloqueados, los pendientes y las recompensas obtenidas."><span class="id">E9</span><strong>Logros</strong><small>Obtenidos · pendientes</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Cuenta</div><div class="flow">
+<button class="node" data-title="Perfil y datos" data-info="Permite consultar y editar nombre, correo, avatar y contraseña."><span class="id">E10</span><strong>Perfil y datos</strong><small>Datos personales · avatar</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Administrar</span></div>
+<button class="node" data-title="Configuración" data-info="Administra notificaciones, apariencia, privacidad, seguridad y cierre de sesión."><span class="id">E11</span><strong>Configuración</strong><small>Preferencias y seguridad</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Sincronizar</span></div>
+<button class="node" data-title="Sincronización" data-info="Sincroniza el progreso, los logros y los datos de usuario con Flutter y el videojuego cuando existe una cuenta compartida."><span class="id">E12</span><strong>Sincronización</strong><small>Progreso · logros · cuenta</small><div class="fake-lines"></div><div class="fake-lines short"></div><div class="fake-button"></div></button>
+</div></div>
+</div><div class="node-detail" aria-live="polite"></div>
+</section>
+
+<section class="diagram" data-diagram="flutter">
+<div class="diagram-head"><div><h2>Aplicación móvil Flutter</h2><p>Secuencia móvil: Login (1), Registro (2), Inicio (3) y el resto de secciones.</p></div><div class="role">ROL · USUARIO</div></div>
+<div class="canvas">
+<div class="lane"><div class="lane-label">Acceso</div><div class="flow">
+<button class="node start" data-title="Login móvil" data-info="Acceso a la aplicación Flutter mediante correo y contraseña. Incluye recuperación de contraseña."><span class="id">E1</span><strong>Login</strong><small>Correo · contraseña</small><div class="fake-lines"></div><div class="fake-lines short"></div><div class="fake-button"></div></button>
+<div class="connector"><span>Crear cuenta</span></div>
+<button class="node" data-title="Registro móvil" data-info="Formulario de creación de cuenta con validación de datos."><span class="id">E2</span><strong>Registro</strong><small>Nombre · correo · contraseña</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Acceder</span></div>
+<button class="node start" data-title="Inicio móvil" data-info="Pantalla principal con accesos rápidos y navegación a las funciones de la aplicación."><span class="id">E3</span><strong>Inicio</strong><small>Resumen · accesos rápidos</small><div class="fake-lines"></div><div class="fake-lines"></div><div class="fake-button"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Exploración</div><div class="flow">
+<button class="node" data-title="Wiki-Cowsmo móvil" data-info="Catálogo con búsqueda, filtros y fichas de personajes, planetas, herramientas e historia."><span class="id">E4</span><strong>Wiki-Cowsmo</strong><small>Buscar · filtrar · explorar</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Abrir ficha</span></div>
+<button class="node" data-title="Ficha de contenido" data-info="Detalle de cada personaje, lugar, herramienta o parte de la historia."><span class="id">E5</span><strong>Ficha de contenido</strong><small>Imagen · información</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Consultar</span></div>
+<button class="node" data-title="Progreso y estadísticas" data-info="Consulta el avance, gráficas, niveles completados y tiempo de juego."><span class="id">E6</span><strong>Progreso y estadísticas</strong><small>Avance · gráficas · tiempo</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Ver</span></div>
+<button class="node" data-title="Logros" data-info="Muestra logros obtenidos, pendientes y recompensas."><span class="id">E7</span><strong>Logros</strong><small>Obtenidos · pendientes</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Cuenta</div><div class="flow">
+<button class="node" data-title="Perfil y datos" data-info="Consulta y edición de información personal, avatar y contraseña."><span class="id">E8</span><strong>Perfil y datos</strong><small>Datos personales · avatar</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Configurar</span></div>
+<button class="node" data-title="Configuración" data-info="Preferencias visuales, notificaciones, privacidad, seguridad y cierre de sesión."><span class="id">E9</span><strong>Configuración</strong><small>Preferencias · seguridad</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Sincronizar</span></div>
+<button class="node" data-title="Sincronización" data-info="Actualiza los datos compartidos, progreso y logros con la PWA y el videojuego."><span class="id">E10</span><strong>Sincronización</strong><small>Cuenta · progreso · logros</small><div class="fake-lines"></div><div class="fake-button"></div></button>
+</div></div>
+</div><div class="node-detail" aria-live="polite"></div>
+</section>
+
+<section class="diagram" data-diagram="game">
+<div class="diagram-head"><div><h2>Videojuego — Cowsmo: Space Rescue</h2><p>Flujo de aventura. Las pantallas del videojuego se diseñan en orientación horizontal.</p></div><div class="role">ROL · USUARIO</div></div>
+<div class="canvas">
+<div class="lane"><div class="lane-label">Acceso</div><div class="flow">
+<button class="node start" data-title="Login del videojuego" data-info="Accede a la cuenta del jugador para recuperar el progreso guardado."><span class="id">E1</span><strong>Login</strong><small>Iniciar sesión · jugar sin cuenta</small><div class="fake-lines"></div><div class="fake-button"></div></button>
+<div class="connector"><span>Crear cuenta</span></div>
+<button class="node" data-title="Registro del videojuego" data-info="Crea una cuenta para guardar y sincronizar el progreso entre plataformas."><span class="id">E2</span><strong>Registro</strong><small>Jugador · correo · contraseña</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Entrar</span></div>
+<button class="node start" data-title="Menú principal" data-info="Permite iniciar la aventura, consultar el perfil, abrir la Wiki-Cowsmo o cambiar la configuración."><span class="id">E3</span><strong>Menú principal</strong><small>Jugar · perfil · wiki · ajustes</small><div class="fake-lines"></div><div class="fake-button"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Aventura</div><div class="flow">
+<button class="node" data-title="Intro" data-info="Presenta el universo, a Moo-ry y el conflicto principal de la historia."><span class="id">E4</span><strong>Intro</strong><small>Presentación de la historia</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Continuar</span></div>
+<button class="node" data-title="Tutorial" data-info="Enseña movimiento, controles, interacción con objetos y mecánicas principales."><span class="id">E5</span><strong>Tutorial</strong><small>Controles · movimiento</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Elegir nivel</span></div>
+<button class="node" data-title="Selección de niveles" data-info="Mapa de planetas con niveles disponibles y bloqueados."><span class="id">E6</span><strong>Niveles</strong><small>Planetas · misiones · desbloqueos</small><div class="fake-lines"></div><div class="fake-button"></div></button>
+<div class="connector"><span>Jugar</span></div>
+<button class="node" data-title="Nivel en juego" data-info="Partida activa con objetivos, exploración y guardado del avance."><span class="id">E7</span><strong>Nivel en juego</strong><small>Objetivos · exploración</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Pausar</span></div>
+<button class="node" data-title="Menú de pausa" data-info="Permite reanudar, reiniciar, abrir configuración o salir al menú principal."><span class="id">E8</span><strong>Menú de pausa</strong><small>Reanudar · reiniciar · salir</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+</div></div>
+<div class="lane"><div class="lane-label">Jugador</div><div class="flow">
+<button class="node" data-title="Perfil del jugador" data-info="Muestra nombre, avatar, estadísticas y logros obtenidos."><span class="id">E9</span><strong>Perfil del jugador</strong><small>Avatar · estadísticas · logros</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Consultar</span></div>
+<button class="node" data-title="Wiki-Cowsmo del juego" data-info="Muestra personajes descubiertos, lugares explorados, herramientas encontradas e historia desbloqueada."><span class="id">E10</span><strong>Wiki-Cowsmo</strong><small>Descubrimientos · fichas · historia</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Ajustar</span></div>
+<button class="node" data-title="Configuración del videojuego" data-info="Ajustes de música, efectos, controles, calidad gráfica e idioma."><span class="id">E11</span><strong>Configuración</strong><small>Sonido · controles · gráficos</small><div class="fake-lines"></div><div class="fake-lines short"></div></button>
+<div class="connector"><span>Guardar</span></div>
+<button class="node" data-title="Sincronización" data-info="Guarda progreso y logros y sincroniza con la cuenta vinculada cuando existe conexión."><span class="id">E12</span><strong>Sincronización</strong><small>Cuenta · progreso · logros</small><div class="fake-lines"></div><div class="fake-button"></div></button>
+</div></div>
+</div><div class="node-detail" aria-live="polite"></div>
+</section>
+<p class="global-note">Cada diagrama corresponde a una aplicación independiente y utiliza un único rol: Usuario. Las conexiones muestran el flujo propuesto de pantallas; la sincronización entre productos requiere una cuenta y servicios compartidos implementados.</p>
+</main>
+<footer>Diagrama de navegación · Cowsmo: Space Rescue</footer>
+<script>
+function showApp(app){
+ document.querySelectorAll('[data-diagram]').forEach(s=>s.classList.toggle('hidden',app!=='all'&&s.dataset.diagram!==app));
+ document.querySelectorAll('nav [data-app]').forEach(b=>b.classList.toggle('active',b.dataset.app===app));
+}
+document.querySelectorAll('nav [data-app]').forEach(b=>b.addEventListener('click',()=>showApp(b.dataset.app)));
+document.querySelectorAll('.node').forEach(node=>node.addEventListener('click',()=>{
+ const diagram=node.closest('.diagram');
+ diagram.querySelectorAll('.node').forEach(n=>n.classList.remove('selected'));
+ node.classList.add('selected');
+ const box=diagram.querySelector('.node-detail');
+ box.innerHTML='<strong>'+node.dataset.title+'</strong><div>'+node.dataset.info+'</div>';
+ box.classList.add('visible');
+}));
+</script>
+</body>
+</html>
