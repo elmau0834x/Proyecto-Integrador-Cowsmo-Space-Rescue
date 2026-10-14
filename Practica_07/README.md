@@ -33,6 +33,8 @@ El proyecto incluye un mapa general con miniaturas de las pantallas, conexiones 
 Las pantallas se organizan según su plataforma y funcionalidad, permitiendo identificar los recorridos principales de cada rol.
 
 ## 🔗 Visualización del proyecto
+👉 **[Ver Diagrama de navegacion en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/DiagramaNavegacion.html)**
+
 
 👉 **[Ver Sketches en HTML](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/sketchesCowsmo.html)**
 
