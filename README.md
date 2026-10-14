@@ -1,128 +1,126 @@
 # 🚀 Cowsmo: Space Rescue 🐄🌎
 
-> Propuesta técnica, conceptual y de gestión para el desarrollo de un videojuego de plataformas 2.5D con enfoque socioambiental, alineado con los Objetivos de Desarrollo Sostenible (ODS 12, 13 y 15).
-
----
-
-## 📋 Descripción del proyecto
-
-**Cowsmo: Space Rescue** es un videojuego de plataformas 2.5D en el que los jugadores acompañan a **Moo-ry**, una vaca astronauta, en una aventura espacial por el planeta Nébularis.
-
-La misión consiste en recolectar chatarra espacial, limpiar los escenarios mediante el sistema **Bio-Bloom**, reutilizar materiales y construir el cohete *Cowsmo-1* para rescatar a su compañera.
-
-A través de sus mecánicas de exploración, reciclaje y restauración ambiental, el videojuego busca fomentar la conciencia ecológica mediante una experiencia interactiva, divertida y accesible.
-
-## 🎯 Objetivos del proyecto
-
-- Desarrollar una experiencia de plataformas 2.5D con mecánicas de exploración y combate.
-- Promover la limpieza, el reciclaje y el aprovechamiento de recursos.
-- Representar visualmente la recuperación de los ecosistemas mediante Bio-Bloom.
-- Diseñar una experiencia adaptable a PC y dispositivos móviles Android.
-- Aplicar prácticas de desarrollo de software, documentación, control de calidad y gestión de proyectos.
-
-## 👥 Equipo de desarrollo
-
-| Integrante | Responsabilidad |
-|---|---|
-| **Mauricio Rosales G.** | Líder de proyecto y programador principal. |
-| **Brisa Nallely García Gregorio** | Control de calidad (QA), pruebas en Android/PC, documentación y gestión en Jira. |
-| **Carlos Daniel García Pluma** | Diseño de niveles 2.5D, arte y recursos gráficos (*assets*). |
-
-## 🎮 Características principales
-
-- **Jugabilidad 2.5D:** exploración de niveles, doble salto, ataque de topetazo y herramienta de imán para recolectar chatarra.
-- **Sistema Bio-Bloom:** transformación visual de los escenarios para mostrar la recuperación ambiental.
-- **Eco-Crafting:** recolección y reutilización de recursos espaciales para fabricar elementos necesarios en la aventura.
-- **Rescate espacial:** exploración de Nébularis y construcción del cohete Cowsmo-1 para completar la misión.
-- **Plataformas previstas:** PC y dispositivos móviles Android.
-
----
-
-## 📚 Prácticas y documentación académica
-
-En esta sección se organizan las prácticas relacionadas con el proyecto y sus respectivos documentos README.
-
-| Práctica | Descripción | Documentación |
-|---|---|---|
-| **Práctica 04** | Documentación y desarrollo de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_04) |
-| **Práctica 05** | Documentación de la actividad correspondiente al proyecto. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_05/imagenes) |
-| **Práctica 07** | Diagrama de secuencia de pantallas (*sketches*) para Cowsmo: Space Rescue, con roles de usuario y navegación entre interfaces. | [📄 Ver README](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/blob/main/Practica_07) |
-
-> **Nota:** verifica que los nombres de las carpetas coincidan con las rutas de los enlaces. Si las prácticas se encuentran en otro repositorio, utiliza sus enlaces de GitHub correspondientes.
-
----
-
-### 🕘 Versiones anteriores
-
-Se conservan las versiones anteriores del Canvas para consultar su evolución:
-
-- [Archify inicial](Business%20Model%20Canva/Archify/cowsmo_business_model_canvas.html)
-- [Versión de cinco columnas](Business%20Model%20Canva/Archify/cowsmo_business_model_canvas_5col.html)
-- [Versión con detalles](Business%20Model%20Canva/Archify/cowsmo_business_model_canvas_passports.html)
-- [Versión Codex](Business%20Model%20Canva/Codex/bmd.html)
-
-> **Importante:** los presupuestos, precios y canales comerciales del Canvas son estimaciones y propuestas para el proyecto, no evidencia de ventas ni de publicación comercial. Consulta los documentos del modelo para conocer sus supuestos y detalles.
-
-### 🧩 Resumen del modelo de negocio
-
-| Bloque | Descripción |
-|---|---|
-| **Socios clave** | Colaboradores de arte, posibles participantes en pruebas y orientación docente para el enfoque ambiental. |
-| **Actividades clave** | Diseño de niveles, programación de mecánicas, recolección, limpieza, Bio-Bloom, Eco-Crafting y pruebas en PC/Android. |
-| **Recursos clave** | Unity, código fuente, personajes, escenarios, animaciones, gráficos, música, efectos de sonido y dispositivos de prueba. |
-| **Propuesta de valor** | Videojuego de plataformas 2.5D que combina aventura, humor, rescate y restauración ambiental. |
-| **Relaciones con los clientes** | Tutoriales, atención a comentarios, seguimiento de errores y mejoras de la experiencia. |
-| **Canales** | Distribución de demostraciones para PC y Android; itch.io y Google Play considerados como opciones futuras. |
-| **Segmentos de clientes** | Público principal propuesto de 8 a 17 años y público secundario de 18 a 25 años, con atención al mercado hispanohablante. |
-| **Estructura de costos** | Estimación del MVP: $4,600 MXN de efectivo y $38,000 MXN de trabajo aportado; total económico estimado de $42,600 MXN. |
-| **Fuentes de ingresos** | MVP gratuito y propuesta comercial futura de $49 MXN para Android y $89 MXN para PC, sin anuncios. |
-
----
-
-## 🛠️ Tecnologías y herramientas
-
-Las siguientes herramientas forman parte de la documentación y del flujo de trabajo del proyecto.
+> Videojuego de plataformas 2.5D enfocado en la restauración ambiental, el reciclaje tecnológico y la exploración espacial, alineado con los Objetivos de Desarrollo Sostenible (ODS 12, 13 y 15) de la ONU.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Engine-Unity%206%20URP-black?style=for-the-badge&logo=unity&logoColor=white" alt="Unity 6" />
+  <img src="https://img.shields.io/badge/Platform-PC%20%7C%20Android-blue?style=for-the-badge&logo=android&logoColor=white" alt="Platforms" />
+  <img src="https://img.shields.io/badge/ESRB-Everyone%20(E)-green?style=for-the-badge" alt="ESRB E" />
+  <img src="https://img.shields.io/badge/SDG-ODS%2012%20%7C%2013%20%7C%2015-emerald?style=for-the-badge" alt="ODS" />
+</p>
+
+---
+
+## 📋 Descripción del Proyecto
+
+**Cowsmo: Space Rescue** es una aventura de plataformas 2.5D en la que los jugadores toman el control de **Moo-ry**, una ingeniosa vaca astronauta proveniente del planeta sustentable **Verdalia**. 
+
+Tras sufrir la invasión silenciosa de residuos tecnológicos provenientes de la potencia industrial **Nébularis**, Moo-ry y sus amigos son capturados por los tiranos **Rey Malkor** y **Reina Veyra**. Tras escapar en territorio enemigo, Moo-ry debe utilizar su **Pistola/Imán de Succión** para recoger basura electrónica (*E-Waste*), descontaminar los ecosistemas de Nébularis mediante el efecto **Bio-Bloom**, liberar a las criaturas nativas (**Nebulinos y Nebulos**) y construir el cohete espacial **Cowsmo-1** para salvar a sus compañeros.
+
+El juego combina el entretenimiento retro de plataformas sobre rieles en 2.5D (inspirado en clásicos como *Kirby 64*) con una fuerte conciencia ecológica y educativa sobre la economía circular.
+
+---
+
+## 🌌 Sinopsis e Historia
+
+* **El Planeta Verde (Verdalia):** Un mundo sustentable basado en energías limpias y economía circular, donde nada se desperdicia.
+* **La Amenaza de Nébularis:** Malkor y Veyra han agotado los recursos de Nébularis y comienzan a usar Verdalia como vertedero espacial, secuestrando a sus mejores recicladores.
+* **El Rescate Espacial:** Tras ser expulsada en Nébularis, Moo-ry recorre 5 escenarios industriales y contaminados (Laboratorio Destruido, Lago Contaminado, Base Central, Taller de Construcción y el Carguero Central) para derrotar al guardián **Recon-X**, desactivar las jaulas energéticas y reconstruir la nave *Cowsmo-1*.
+
+---
+
+## 🎮 Características y Mecánicas Principales
+
+* **Plataformas 2.5D y Movimiento Ágil:** Movimiento lateral sobre rieles tridimensionales con doble salto, topetazo y desplazamiento en jetpack.
+* **Pistola / Imán de Succión:** Herramienta para atraer chatarra metálica, componentes mecánicos y baterías, además de desarmar drones enemigos.
+* **Sistema Bio-Bloom (% de Limpieza):** Mecánica de restauración que transforma visualmente los escenarios grisáceos y tóxicos en ecosistemas verdes y florecidos al limpiar derrames y cerrar tuberías.
+* **Taller Eco-Crafting:** Módulo de procesamiento entre niveles donde los residuos recolectados se transforman en piezas estructurales y combustible para ensamblar el cohete *Cowsmo-1*.
+* **Clasificación ESRB:** Categoría **E (Everyone)** apta para todo público.
+
+---
+
+## 📊 Organigrama y Estructura del Equipo
+
+El equipo de desarrollo se organiza bajo una estructura ágil de roles bien definidos para garantizar la calidad técnica, el diseño de niveles y el control de procesos:
+
+<p align="center">
+  <img src="./src/img/Green & Orange Modern Organization Structure Graph (1).png" alt="Organigrama" width="500">
+</p>
+
+
+### Roles y Responsabilidades:
+
+* 🛠️ **Líder de Proyecto & Programador Principal — Mauricio Rosales G.**
+  * Arquitectura del sistema y programación *core* en Unity 6.
+  * Mecánicas de movimiento de *Moo-ry*, física del imán de succión y sistema de *Eco-Crafting*.
+  * Gestión de repositorio Git/GitHub y coordinación técnica.
+
+* 🎨 **Diseñador de Niveles 2.5D & Arte — Carlos Daniel García Pluma**
+  * Diseño de mapas, colocación de obstáculos, tuberías y trampas.
+  * Integración de *assets* gráficos URP, animación de personajes y *concept art*.
+  * Configuración visual del efecto *Bio-Bloom* y diseño de *storyboards*.
+
+* 🧪 **Control de Calidad (QA) & Gestión — Brisa Nallely García Gregorio**
+  * Pruebas de usabilidad y rendimiento en ejecutables de PC y archivos `.APK` para Android.
+  * Detección, reporte y seguimiento de *bugs* de físicas/colisiones.
+  * Administración del tablero Scrum en Jira, historias de usuario y documentación técnica (GDD/Canvas).
+
+---
+
+## 🌱 Impacto Ambiental y ODS (ONU)
+
+El videojuego integra de forma directa los Objetivos de Desarrollo Sostenible de las Naciones Unidas:
+
+* ♻️ **ODS 12 — Producción y Consumo Responsables:** Promoción de la economía circular, reciclaje de *E-Waste* y reutilización de componentes tecnológicos.
+* 🌡️ **ODS 13 — Acción por el Clima:** Sensibilización sobre los peligros de los vertederos sin control y la contaminación industrial.
+* 🌿 **ODS 15 — Vida de Ecosistemas Terrestres:** Mecánica *Bio-Bloom* que enseña la importancia de la remediación de suelos y la restauración de hábitats naturales.
+
+---
+
+## 💼 Modelo de Negocio y Monetización
+
+* **Enfoque Premium / "Prueba y Compra" (Free-to-Start):**
+  * **Versión Móvil (Android):** Descarga gratuita del Prólogo (Niveles 1 y 2) para conocer las mecánicas, con opción de un pago único ($1.99 - $2.99 USD) para desbloquear la historia completa sin publicidad ni anuncios intrusivos.
+  * **Versión PC (Itch.io / Steam):** Modelo *Buy-to-Play* tradicional a precio indie accesible ($3.99 - $4.99 USD).
+  * **MVP Académico:** Publicación gratuita de portafolio para evaluación universitaria y difusión ambiental.
+
+---
+
+## 🛠️ Tecnologías y Herramientas
+
+<p align="left">
+  <img src="https://img.shields.io/badge/Unity_6-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="Visual Studio Code" />
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
 </p>
 
-- **Unity:** desarrollo del videojuego.
-- **Flutter:** desarrollo de interfaces y aplicaciones móviles.
-- **HTML, CSS y JavaScript:** creación de prototipos y documentos interactivos.
-- **Git y GitHub:** control de versiones y alojamiento del repositorio.
-- **Jira:** organización y seguimiento de actividades.
-- **Visual Studio Code:** edición de código y documentación.
-
-*Las tecnologías mencionadas representan las herramientas consideradas o utilizadas en las distintas partes del proyecto; no implican que todas las plataformas estén terminadas o publicadas.*
+* **Motor y Lenguaje:** Unity 6 (URP) & C#.
+* **Backend y Servicios:** FastAPI (Python) / Node.js con autenticación JWT y persistencia en MySQL, MongoDB y Redis.
+* **Control de Versiones y Gestión:** Git, GitHub y Jira (Scrum).
+* **Diseño y Documentación:** Visual Studio Code, Figma y Canva.
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Estructura del Repositorio
 
 ```text
 Cowsmo-Space-Rescue/
 ├── Business Model Canva/
 │   ├── Archify/
-│   │   └── Profesional/
-│   │       ├── contenido-canvas.md
-│   │       ├── README.md
-│   │       ├── cowsmo-business-model-canvas.html
-│   │       ├── cowsmo-archify.html
-│   │       └── evidencias/
-│   │           └── revision-visual.md
+│   │   └── cowsmo-business-model-canvas.html
 │   └── Codex/
 │       └── bmd.html
 ├── Documents/
-│   └── Documentación del proyecto y GDD
+│   ├── Game_Design_Document_GDD.pdf
+│   ├── Diagrama_de_Arquitectura.png
+│   └── Diagrama_de_Roles.png
 ├── Practica04/
 │   └── README.md
 ├── Practica05/
@@ -130,37 +128,3 @@ Cowsmo-Space-Rescue/
 ├── Practica_07/
 │   └── README.md
 └── README.md
-```
-
-> Esta estructura es una referencia de organización. Conserva los nombres y las ubicaciones reales de las carpetas existentes en tu repositorio.
-
----
-
-## 🌱 Impacto ambiental y ODS
-
-Cowsmo: Space Rescue integra elementos de conciencia ambiental a través de sus mecánicas de juego.
-
-- **ODS 12 — Producción y consumo responsables:** reutilización de recursos y reciclaje de materiales.
-- **ODS 13 — Acción por el clima:** sensibilización sobre la contaminación y la importancia del cuidado ambiental.
-- **ODS 15 — Vida de ecosistemas terrestres:** restauración de entornos y recuperación de espacios naturales.
-
-El propósito es comunicar estos temas de forma interactiva, mediante objetivos y cambios visuales que permitan al jugador observar el resultado de sus acciones.
-
----
-
-## 📌 Estado del proyecto
-
-El proyecto reúne propuestas de diseño, documentación, planificación y actividades académicas relacionadas con el desarrollo de Cowsmo: Space Rescue.
-
-Las funciones, plataformas y características descritas deben considerarse según el estado real de implementación de cada componente.
-
-## 📝 Conclusión
-
-**Cowsmo: Space Rescue** busca combinar el entretenimiento de un videojuego de plataformas 2.5D con un mensaje de responsabilidad ambiental. La documentación técnica, el modelo de negocio, los diagramas de navegación y las actividades de desarrollo permiten organizar las ideas y establecer una base para la evolución del proyecto.
-
----
-
-<p align="center">
-  🚀 <strong>Cowsmo: Space Rescue</strong> 🐄🌎<br />
-  <em>¡Explora el espacio, recicla recursos y devuelve la vida a los planetas!</em>
-</p>
