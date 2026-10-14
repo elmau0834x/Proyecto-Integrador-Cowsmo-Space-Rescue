@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./src/img/Portada del juego.png" alt="Cowsmo Space Rescue Logo" height="280"/>
+  <img src="./src/img/Portada del juego.jpeg" alt="Cowsmo Space Rescue Logo" height="280"/>
 </p>
 
 <p align="center">
@@ -95,7 +95,7 @@
 ### Identidad del Estudio y Portada
 | Logo del Estudio (Fondo) | Logo del Estudio (PNG) | Portada Oficial (Box Art) |
 | :---: | :---: | :---: |
-| <img src="./src/img/Logo.jpg" height="180" alt="Logo Estudio"/> | <img src="./src/img/Logo sin fondo.png" height="180" alt="Logo Transparente"/> | <img src="./src/img/Portada del juego.png" height="180" alt="Portada"/> |
+| <img src="./src/img/Logo.jpg" height="180" alt="Logo Estudio"/> | <img src="./src/img/Logo sin fondo.png" height="180" alt="Logo Transparente"/> | <img src="./src/img/Portada del juego.jpeg" height="180" alt="Portada"/> |
 
 ### 🎨 Paletas de Colores Oficiales
 
