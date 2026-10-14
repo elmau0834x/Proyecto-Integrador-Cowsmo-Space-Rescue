@@ -75,7 +75,7 @@
 
 ---
 
-# Cowsmo: Space Rescue - Panel de Navegación
+# Cowsmo: Space Rescue - Diagrama de Roles
 
 <p align="center">
   <img src="images/Cowsmo_Dashboard.png" alt="Cowsmo Dashboard" />
@@ -97,14 +97,17 @@
 | :---: | :---: | :---: |
 | <img src="./src/img/Logo.jpg" height="180" alt="Logo Estudio"/> | <img src="./src/img/Logo sin fondo.png" height="180" alt="Logo Transparente"/> | <img src="./src/img/Portada del juego.png" height="180" alt="Portada"/> |
 
-### Paleta de Colores
-- **Naranja & Crema:** Traje de papel/cartulina de *Moo-ry*, resplandor de succión y energía.
-- **Verde Esmeralda & Bio-Bloom:** Papel recortado brillante, vegetación estilo *origami/pop-up* y restauración ambiental (Verdalia).
-- **Gris Kraft & Morado Neón:** Cartón arrugado, empaques industriales, chatarra metálica y zonas contaminadas por Malkor y Veyra (Nébularis).
+### 🎨 Paletas de Colores Oficiales
 
-<p align="center">
-  <img src="images/colors_cowsmo.png" alt="Paleta de Colores Verdalia y Nébularis" width="600"/>
-</p>
+| **Protagonista e Identidad (Moo-Ry & Logo)** | **Entorno Limpio & Bio-Bloom (Verdalia)** |
+| :---: | :---: |
+| <img src="./src/img/Protagonista e Identidad (Moo-Ry & Logo).png" width="380" alt="Paleta Protagonista"/> | <img src="./src/img/Entorno Limpio & Bio-Bloom (Verdalia _ Planeta Restaurado).png" width="380" alt="Paleta Bio-Bloom"/> |
+| *Naranja cartulina, crema, azul visor y marrón corrugado.* | *Verde origami, verde esmeralda, amarillo celofán y azul agua.* |
+
+| **Entorno Contaminado & Chatarra (Nébularis)** | **Interfaz de Usuario & Materiales (UI / HUD)** |
+| :---: | :---: |
+| <img src="./src/img/Entorno Contaminado & Chatarra (Nébularis _ Dominio Industrial).png" width="380" alt="Paleta Nébularis"/> | <img src="./src/img/Interfaz de Usuario & Materiales Teatrales (UI _ HUD).png" width="380" alt="Paleta UI HUD"/> |
+| *Gris industrial, marrón óxido, morado tóxico y verde neón.* | *Marrón kraft texturizado, rojo estampilla y blanco recorte.* |
 
 ### Dirección de Arte y Estética "Paper Mario"
 - **Estilo Artístico (2.5D Papercraft):** Personajes y accesorios en recortes 2D planos (*cutout Sprites*) que se desplazan dentro de escenarios tridimensionales construidos como dioramas de cartón, empaques reciclados y material escolar/industrial.
