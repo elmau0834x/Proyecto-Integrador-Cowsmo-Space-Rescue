@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="./src/img/Logo%20sin%20fondo.png" alt="Orbital Create Rescue Logo" height="180" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./src/img/GameLogo.png" alt="Cowsmo Space Rescue Logo" height="150" />
+</p>
+
 # <p align="center">Cowsmo: Space Rescue</p>
 <p align="center">
   <strong>Videojuego de Plataformas 2.5D y Gestión Socioambiental</strong><br>
@@ -65,13 +71,12 @@
 
 ---
 
-## Diagramas del Proyecto / Modelos
+### Ver en línea (GitHub Pages)
 
-| # | Diagramas | Descripción | Firmas | Estatus |
-|---|------------------------|--------------|--------|---------|
-|04|[Práctica 04 - Business Model Canvas](Business%20Model%20Canva/Archify/cowsmo_business_model_canvas.html)|Modelo de negocio interactivo utilizando Archify para estructurar la propuesta de valor, costes e ingresos del proyecto.|--|Completada ✅ |
-|05|[Práctica 05 - Diagrama de Roles de Usuario](Documents/Diagrama_de_Roles.png)|Diagrama interactivo de roles internos (Admin/Dev, Tester/Docente) y usuarios externos (Jugador Principal, Jugador Demo).|--|Completada ✅ |
-|07|[Práctica 07 - Diagrama de Navegación y Sketches](Practica_07/README.md)|Storyboard y secuencia de navegación entre niveles y menús de interfaz para Cowsmo: Space Rescue.|--|Completada ✅ |
+- [Página principal del proyecto](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/index.html)
+- [Práctica 04 · Business Model Canvas](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_04)
+- [Práctica 05 · Diagrama de Roles de Usuario](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_05/imagenes)
+- [Práctica 07 · Sketches y navegación](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_07)
 
 ---
 
@@ -81,12 +86,12 @@
   <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Fiagrama de Roles" />
 </p>
 
-### Ver en línea (GitHub Pages)
+---
 
-- [Página principal del proyecto](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/index.html)
-- [Práctica 04 · Business Model Canvas](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Business%20Model%20Canva/Archify/cowsmo_business_model_canvas.html)
-- [Práctica 05 · Diagrama de Roles de Usuario](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Documents/Diagrama_de_Roles.png)
-- [Práctica 07 · Sketches y navegación](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/Practica_07/index.html)
+# Modelo Canva
+<p align="center">
+  <img src="./src/img/canva.jpeg" alt="Cowsmo Modelo Canva" />
+</p>
 
 ---
 
@@ -116,6 +121,10 @@
   - **Efecto "Flip" de Papel:** *Moo-ry* y los enemigos giran sobre su eje como láminas de papel al cambiar de dirección.
   - **Transformación Bio-Bloom:** Al limpiar una zona, el entorno de cartón gris y doblado "se despliega" (*pop-up book*) revelando capas de papel maché y celofán de colores vivos y florecidos.
 - **Interfaz de Usuario (UI):** Menús diseñados con texturas de etiquetas ecológicas, estampillas, recortes de papel kraft e iluminación neón suave en bordes.
+
+---
+
+
 
 ---
 
