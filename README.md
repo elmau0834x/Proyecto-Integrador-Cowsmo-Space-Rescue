@@ -117,7 +117,7 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Diagrama de Arquitectura
 <p align="center">
-  <img src="./src/img/Documentacion/Diagrama de Arquitectura.jpeg" alt="Cowsmo Diagrama de Arquitectura Papercraft" />
+  <img src="./src/img/Documentacion/Diagrama de Arquitectura.jpg" alt="Cowsmo Diagrama de Arquitectura Papercraft" />
 </p>
 
 ### Diagrama de Roles de Usuario
