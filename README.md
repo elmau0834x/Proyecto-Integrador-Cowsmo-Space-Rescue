@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="./src/img/Portada del juego.jpeg" alt="Cowsmo Space Rescue Logo" height="280"/>
+  <img src="./src/img/Portada del juego.jpeg" alt="Cowsmo Space Rescue Cover" height="280"/>
 </p>
 
 <p align="center">
@@ -49,6 +49,20 @@
 
 ---
 
+## Objetivos del Proyecto
+
+### Objetivo General
+Desarrollar un ecosistema de software multiplataforma compuesto por un videojuego 2.5D (PC/Android), una PWA y una aplicación móvil, que integre mecánicas de recolección de chatarra tecnológica y restauración de ecosistemas para concientizar a los jugadores sobre la economía circular y la remediación ambiental.
+
+### Objetivos Específicos
+- **Implementar mecánicas 2.5D interactivas:** Desarrollar el sistema de físicas para la "Pistola/Imán de Succión" y movimiento de plataformas en Unity 6.
+- **Integrar el sistema visual "Bio-Bloom":** Crear transiciones dinámicas mediante *shaders* para transformar escenarios contaminados en entornos florecidos en tiempo real.
+- **Construir una arquitectura de backend escalable:** Desarrollar una API REST con FastAPI/Node.js respaldada por una persistencia híbrida (MongoDB, MySQL, Redis) para gestionar el progreso (*Cross-Save*) y métricas.
+- **Desarrollar plataformas complementarias:** Implementar una PWA (React) para clasificaciones globales y una *Companion App* (Flutter) para la gestión del perfil del jugador y recompensas.
+- **Promover los Objetivos de Desarrollo Sostenible (ODS):** Alinear la narrativa y mecánicas del juego con los ODS 12, 13 y 15 de la ONU para generar un impacto socioambiental positivo.
+
+---
+
 ## Problemática vs Solución
 
 | El Problema | La Solución (Cowsmo: Space Rescue) |
@@ -59,57 +73,17 @@
 
 ---
 
-## Tecnologías
-
-| Capa | Herramientas |
-| :--- | :--- |
-| **Videojuego (Cliente)** | Unity 6 (URP), C# ![Unity](https://img.shields.io/badge/Unity_6-000000?style=for-the-badge&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) |
-| **Plataforma Web & App** | React + Vite (PWA), Flutter ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) |
-| **Backend Services** | FastAPI (Python), Node.js (Express) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) |
-| **Bases de Datos & Caché** | MySQL, MongoDB, Redis ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) |
-| **Infraestructura & QA** | Docker Compose, Jira (Scrum), Git/GitHub ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
-
----
-
-### Ver en línea (GitHub Pages)
-
-- [Página principal del proyecto](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/index.html)
-- [Práctica 04 · Business Model Canvas](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_04)
-- [Práctica 05 · Diagrama de Roles de Usuario](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_05/imagenes)
-- [Práctica 07 · Sketches y navegación](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_07)
-
----
-
-# Cowsmo: Space Rescue
-## Diagrama de Arquitectura
-
-<p align="center">
-  <img src="./src/img/Diagrama de Arquitectura.jpeg" alt="Cowsmo Diagrama de Arquitectura" />
-</p>
-
-## Diagrama de Roles
-
-<p align="center">
-  <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Fiagrama de Roles" />
-</p>
-
----
-
-# Modelo Canva
-<p align="center">
-  <img src="./src/img/canva.jpeg" alt="Cowsmo Modelo Canva" />
-</p>
-
----
-
 ## Identidad Visual y Estética (Papercraft 2.5D)
 
-### Identidad del Estudio y Portada
-| Logo del Estudio (Fondo) | Logo del Estudio (PNG) | Portada Oficial (Box Art) |
-| :---: | :---: | :---: |
-| <img src="./src/img/Logo.jpg" height="180" alt="Logo Estudio"/> | <img src="./src/img/Logo sin fondo.png" height="180" alt="Logo Transparente"/> | <img src="./src/img/Portada del juego.jpeg" height="180" alt="Portada"/> |
+### Dirección de Arte y Estética
+- **Estilo Artístico (2.5D Papercraft):** Personajes y accesorios en recortes 2D planos (*cutout Sprites*) que se desplazan dentro de escenarios tridimensionales construidos como dioramas de cartón, empaques reciclados y material escolar/industrial.
+- **Coherencia con el Mensaje Ambiental:** La estética de cartón y papel está reforzada de forma directa con la mecánica de **reciclaje (ODS 12)**; los objetos y estructuras del mundo lucen explícitamente reutilizados.
+- **Animación & Efectos (VFX):**
+  - **Efecto "Flip" de Papel:** *Moo-ry* y los enemigos giran sobre su eje como láminas de papel al cambiar de dirección.
+  - **Transformación Bio-Bloom:** Al limpiar una zona, el entorno de cartón gris y doblado "se despliega" (*pop-up book*) revelando capas de papel maché y celofán de colores vivos y florecidos.
+- **Interfaz de Usuario (UI):** Menús diseñados con texturas de etiquetas ecológicas, estampillas, recortes de papel kraft e iluminación neón suave en bordes.
 
-### 🎨 Paletas de Colores Oficiales
+### Paletas de Colores Oficiales
 
 | **Protagonista e Identidad (Moo-Ry & Logo)** | **Entorno Limpio & Bio-Bloom (Verdalia)** |
 | :---: | :---: |
@@ -121,17 +95,38 @@
 | <img src="./src/img/Entorno Contaminado & Chatarra (Nébularis _ Dominio Industrial).png" width="380" alt="Paleta Nébularis"/> | <img src="./src/img/Interfaz de Usuario & Materiales Teatrales (UI _ HUD).png" width="380" alt="Paleta UI HUD"/> |
 | *Gris industrial, marrón óxido, morado tóxico y verde neón.* | *Marrón kraft texturizado, rojo estampilla y blanco recorte.* |
 
-### Dirección de Arte y Estética
-- **Estilo Artístico (2.5D Papercraft):** Personajes y accesorios en recortes 2D planos (*cutout Sprites*) que se desplazan dentro de escenarios tridimensionales construidos como dioramas de cartón, empaques reciclados y material escolar/industrial.
-- **Coherencia con el Mensaje Ambiental:** La estética de cartón y papel reforzada de forma directa con la mecánica de **reciclaje (ODS 12)**; los objetos y estructuras del mundo lucen explícitamente reutilizados.
-- **Animación & Efectos (VFX):**
-  - **Efecto "Flip" de Papel:** *Moo-ry* y los enemigos giran sobre su eje como láminas de papel al cambiar de dirección.
-  - **Transformación Bio-Bloom:** Al limpiar una zona, el entorno de cartón gris y doblado "se despliega" (*pop-up book*) revelando capas de papel maché y celofán de colores vivos y florecidos.
-- **Interfaz de Usuario (UI):** Menús diseñados con texturas de etiquetas ecológicas, estampillas, recortes de papel kraft e iluminación neón suave en bordes.
+---
+
+## Diseño y Arquitectura del Sistema
+> *Nota: Todos los esquemas y diagramas del proyecto reflejan la identidad visual del diorama de cartón (Papercraft) y etiquetas Kraft, alineándose con el ODS 12.*
+
+### Diagrama de Arquitectura
+<p align="center">
+  <img src="./src/img/Diagrama de Arquitectura.jpeg" alt="Cowsmo Diagrama de Arquitectura Papercraft" />
+</p>
+
+### Diagrama de Roles de Usuario
+<p align="center">
+  <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Diagrama de Roles Papercraft" />
+</p>
+
+### Modelo Business Canvas
+<p align="center">
+  <img src="./src/img/canva.jpeg" alt="Cowsmo Modelo Canvas" />
+</p>
 
 ---
 
+## Tecnologías
 
+| Capa | Herramientas |
+| :--- | :--- |
+| **Videojuego (Cliente)** | Unity 6 (URP), C# ![Unity](https://img.shields.io/badge/Unity_6-000000?style=for-the-badge&logo=unity&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) |
+| **Plataforma Web & App** | React + Vite (PWA), Flutter ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white) |
+| **Backend Services** | FastAPI (Python), Node.js (Express) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white) ![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) |
+| **Bases de Datos & Caché**| MySQL, MongoDB, Redis ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) |
+| **Seguridad & Monitoreo** | Keycloak, Grafana, Prometheus, Loki ![Keycloak](https://img.shields.io/badge/Keycloak-FFFFFF?style=for-the-badge&logo=Keycloak&logoColor=blue) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white) |
+| **Infraestructura & QA** | Docker Compose, Jira (Scrum), Git/GitHub ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) |
 
 ---
 
@@ -146,6 +141,15 @@
 <p align="center">
   <img src="./src/img/gantt.jpeg" alt="Cronograma Gantt Cowsmo Space Rescue" width="650"/>
 </p>
+
+---
+
+## Documentación y Entregables (GitHub Pages)
+
+- [Página principal del proyecto](https://elmau0834x.github.io/Proyecto-Integrador-Cowsmo-Space-Rescue/index.html)
+- [Práctica 04 · Business Model Canvas](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_04)
+- [Práctica 05 · Diagrama de Roles de Usuario](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_05/imagenes)
+- [Práctica 07 · Sketches y navegación](https://github.com/elmau0834x/Proyecto-Integrador-Cowsmo-Space-Rescue/tree/main/Practica_07)
 
 ---
 
