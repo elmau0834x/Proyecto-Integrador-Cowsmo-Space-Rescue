@@ -122,6 +122,9 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Diagrama de Roles de Usuario
 <p align="center">
+  <img src="./src/img/Documentacion/Diagrama de roles de Cowsmo.png" alt="Cowsmo Diagrama de Roles Papercraft" />
+</p>
+<p align="center">
   <img src="./src/img/Documentacion/Diagrama de Roles de Usuario.jpeg" alt="Cowsmo Diagrama de Roles Papercraft" />
 </p>
 
