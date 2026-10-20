@@ -149,12 +149,12 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Estructura Organizacional
 <p align="center">
-  <img src="./src/img/organigrama.png" alt="Organigrama Cowsmo Space Rescue" width="650"/>
+  <img src="./src/img/Documentacion/Estructura Organizacional.jpg" alt="Organigrama Cowsmo Space Rescue" width="650"/>
 </p>
 
 ### Cronograma (Gantt & Jira)
 <p align="center">
-  <img src="./src/img/gantt.jpeg" alt="Cronograma Gantt Cowsmo Space Rescue" width="650"/>
+  <img src="./src/img/Documentacion/Cronograma del Proyecto.jpg" alt="Cronograma Gantt Cowsmo Space Rescue" width="650"/>
 </p>
 
 ---
