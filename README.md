@@ -112,7 +112,7 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Modelo Business Canvas
 <p align="center">
-  <img src="./src/img/canva.jpeg" alt="Cowsmo Modelo Canvas" />
+  <img src="./src/img/Business Model Canvas.jpg" alt="Cowsmo Modelo Canvas" />
 </p>
 
 ---
