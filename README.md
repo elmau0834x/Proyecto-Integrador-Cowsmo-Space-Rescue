@@ -1,17 +1,13 @@
-<p align="center">
-  <img src="./src/img/Logo%20sin%20fondo.png" alt="Orbital Create Rescue Logo" height="180" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./src/img/GameLogo.png" alt="Cowsmo Space Rescue Logo" height="150" />
-</p>
 
 # <p align="center">Cowsmo: Space Rescue</p>
+
 <p align="center">
   <strong>Videojuego de Plataformas 2.5D y Gestión Socioambiental</strong><br>
   <em>"Explora el espacio, recicla recursos tecnológicos y devuelve la vida a la galaxia."</em>
 </p>
 
 <p align="center">
-  <img src="./src/img/Portada del juego.jpeg" alt="Cowsmo Space Rescue Cover" height="280"/>
+  <img src="./src/img/Documentacion/Portada del juego.jpeg" alt="Cowsmo Space Rescue Cover" height="380"/>
 </p>
 
 <p align="center">
@@ -34,6 +30,25 @@
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
   </a>
 </p>
+
+<table>
+  <tr>
+    <td>
+      <p align="center">
+        <img src="./src/img/Logo%20sin%20fondo.png" alt="Orbital Create Rescue Logo" height="180" >
+      </p>
+    </td>
+    <td>
+      <p align="center">
+        <img src="./src/img/GameLogo.png" alt="Cowsmo Space Rescue Logo" height="150" >
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Logo de Empresa</b></td> 
+    <td align="center"><b>Logo de Proyecto</b></td>
+  </tr>
+</table>
 
 ---
 
@@ -87,12 +102,12 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 | **Protagonista e Identidad (Moo-Ry & Logo)** | **Entorno Limpio & Bio-Bloom (Verdalia)** |
 | :---: | :---: |
-| <img src="./src/img/Protagonista e Identidad (Moo-Ry & Logo).png" width="380" alt="Paleta Protagonista"/> | <img src="./src/img/Entorno Limpio & Bio-Bloom (Verdalia _ Planeta Restaurado).png" width="380" alt="Paleta Bio-Bloom"/> |
+| <img src="./src/img/Colors/Protagonista e Identidad (Moo-Ry & Logo).png" width="380" alt="Paleta Protagonista"/> | <img src="./src/img/Colors/Entorno Limpio & Bio-Bloom (Verdalia _ Planeta Restaurado).png" width="380" alt="Paleta Bio-Bloom"/> |
 | *Naranja cartulina, crema, azul visor y marrón corrugado.* | *Verde origami, verde esmeralda, amarillo celofán y azul agua.* |
 
 | **Entorno Contaminado & Chatarra (Nébularis)** | **Interfaz de Usuario & Materiales (UI / HUD)** |
 | :---: | :---: |
-| <img src="./src/img/Entorno Contaminado & Chatarra (Nébularis _ Dominio Industrial).png" width="380" alt="Paleta Nébularis"/> | <img src="./src/img/Interfaz de Usuario & Materiales Teatrales (UI _ HUD).png" width="380" alt="Paleta UI HUD"/> |
+| <img src="./src/img/Colors/Entorno Contaminado & Chatarra (Nébularis _ Dominio Industrial).png" width="380" alt="Paleta Nébularis"/> | <img src="./src/img/Colors/Interfaz de Usuario & Materiales Teatrales (UI _ HUD).png" width="380" alt="Paleta UI HUD"/> |
 | *Gris industrial, marrón óxido, morado tóxico y verde neón.* | *Marrón kraft texturizado, rojo estampilla y blanco recorte.* |
 
 ---
@@ -102,17 +117,20 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Diagrama de Arquitectura
 <p align="center">
-  <img src="./src/img/Diagrama de Arquitectura.jpeg" alt="Cowsmo Diagrama de Arquitectura Papercraft" />
+  <img src="./src/img/Documentacion/Diagrama de Arquitectura.jpg" alt="Cowsmo Diagrama de Arquitectura Papercraft" />
 </p>
 
 ### Diagrama de Roles de Usuario
 <p align="center">
-  <img src="./src/img/Diagrama de roles.jpg" alt="Cowsmo Diagrama de Roles Papercraft" />
+  <img src="./src/img/Documentacion/Diagrama de roles de Cowsmo.png" alt="Cowsmo Diagrama de Roles Papercraft" />
+</p>
+<p align="center">
+  <img src="./src/img/Documentacion/Diagrama de Roles de Usuario.jpeg" alt="Cowsmo Diagrama de Roles Papercraft" />
 </p>
 
 ### Modelo Business Canvas
 <p align="center">
-  <img src="./src/img/canva.jpeg" alt="Cowsmo Modelo Canvas" />
+  <img src="./src/img/Documentacion/Business Model Canvas.jpg" alt="Cowsmo Modelo Canvas" />
 </p>
 
 ---
@@ -134,12 +152,12 @@ Desarrollar un ecosistema de software multiplataforma compuesto por un videojueg
 
 ### Estructura Organizacional
 <p align="center">
-  <img src="./src/img/organigrama.png" alt="Organigrama Cowsmo Space Rescue" width="650"/>
+  <img src="./src/img/Documentacion/Estructura Organizacional.jpg" alt="Organigrama Cowsmo Space Rescue" width="650"/>
 </p>
 
 ### Cronograma (Gantt & Jira)
 <p align="center">
-  <img src="./src/img/gantt.jpeg" alt="Cronograma Gantt Cowsmo Space Rescue" width="650"/>
+  <img src="./src/img/Documentacion/Cronograma del Proyecto.jpg" alt="Cronograma Gantt Cowsmo Space Rescue" width="650"/>
 </p>
 
 ---
